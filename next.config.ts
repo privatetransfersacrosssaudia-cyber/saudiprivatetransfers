@@ -5,6 +5,16 @@ const nextConfig: NextConfig = {
   experimental: {
     agentFeedback: true,
   },
+  /**
+   * Emits `.next/standalone`, including the `*.nft.json` file traces.
+   *
+   * Required because `npm run build` bundles for Cloudflare with
+   * `opennextjs-cloudflare build --skipNextBuild`. When OpenNext runs the Next
+   * build itself it turns standalone output on for us; because we skip that
+   * (to avoid recursing back into `npm run build`), we have to ask for it
+   * here, or the bundler fails on a missing `middleware.js.nft.json`.
+   */
+  output: "standalone",
   cacheComponents: true,
   partialPrefetching: true,
   /**
