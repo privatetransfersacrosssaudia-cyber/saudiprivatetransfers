@@ -1,24 +1,25 @@
 // Cloudflare Workers configuration for this site.
 //
-// NOTE: `name` and the self-reference below are the DEPLOYED Worker's
-// identifiers, not branding. They are left exactly as deployed on purpose:
-// renaming a Worker does not move it, it creates a second one and orphans the
-// first. The customer-facing brand lives in lib/site.ts. If the Worker and
-// the custom domain are ever renamed, change both strings here together and
-// re-point the route in the Cloudflare dashboard.
+// `name` and the self-reference below are the DEPLOYED Worker's identifiers,
+// not branding; the customer-facing brand lives in lib/site.ts. They must
+// match the Worker that actually exists in the account, and they must match
+// each other: a self-reference pointing at a name that does not exist fails
+// the deploy with "Service binding 'WORKER_SELF_REFERENCE' references Worker
+// '<name>' which was not found" (code 10143). That has now happened twice --
+// once pointing at the package name, once at a previous brand name.
+//
+// Workers Builds overrides `name` with the Worker it was told to deploy, but
+// it does NOT rewrite the service binding, so a mismatch here still breaks.
 //
 // Committed so the Cloudflare build does not rely on `wrangler deploy`'s
-// automatic Next.js setup. That auto-setup generated a config whose
-// WORKER_SELF_REFERENCE service binding pointed at a Worker named after the
-// package ("private-transfer-across-saudia"), which does not exist, so the
-// first deploy failed (code 10143). The self-reference must match `name`.
+// automatic Next.js setup, which generated a broken self-reference.
 //
 // Mirrors a setup already proven on this stack: no R2 bucket; prerendered
 // pages are served from Workers Static Assets (see open-next.config.ts).
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
 	"main": ".open-next/worker.js",
-	"name": "ksarehlatransfers",
+	"name": "privatetransfersacrosssaudia",
 	"compatibility_date": "2026-11-10",
 	"compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
 	"assets": {
@@ -29,19 +30,44 @@
 		{
 			// Self-reference service binding — must match the Worker name above.
 			"binding": "WORKER_SELF_REFERENCE",
-			"service": "ksarehlatransfers"
+			"service": "privatetransfersacrosssaudia"
 		}
 	],
 	"images": {
 		"binding": "IMAGES"
 	},
+	// The custom domains, declared here rather than left to the dashboard.
+	//
+	// A deploy overwrites the Worker's remote configuration with this file, so
+	// routes that exist only in the dashboard are REMOVED by the next deploy.
+	// Keeping them here is what stops a deploy from silently detaching the
+	// live domain.
+	"routes": [
+		{
+			"pattern": "privatetransfersacrosssaudia.com",
+			"zone_name": "privatetransfersacrosssaudia.com",
+			"custom_domain": true
+		},
+		{
+			"pattern": "www.privatetransfersacrosssaudia.com",
+			"zone_name": "privatetransfersacrosssaudia.com",
+			"custom_domain": true
+		}
+	],
+	// No workers.dev subdomain and no preview URLs.
+	//
+	// Both would serve this same site on a second, crawlable hostname, which
+	// search engines read as duplicate content competing with the real domain.
+	// The dashboard already has these off; declaring them keeps a deploy from
+	// turning them back on, since wrangler defaults both to true.
+	"workers_dev": false,
+	"preview_urls": false,
 	"vars": {
 		// Next's response cache (minimal mode, as OpenNext runs it) keeps up to
 		// 150 rendered responses in memory per Worker instance. Inside the 128 MB
 		// Worker memory cap that caused 1102 errors on an earlier deployment of
 		// this stack during crawls; the cache only dedupes requests within a 10 s
-		// window, so
-		// a small size loses nothing.
+		// window, so a small size loses nothing.
 		"NEXT_PRIVATE_RESPONSE_CACHE_MAX_SIZE": "10"
 	},
 	// Every secret -- SUPABASE_SERVICE_ROLE_KEY, CRM_SESSION_SECRET,
