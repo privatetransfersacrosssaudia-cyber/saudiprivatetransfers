@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 import { cn } from "cn";
@@ -6,15 +7,21 @@ import { site } from "@/lib/site";
 import { ui } from "@/lib/i18n/dictionary";
 import type { Locale } from "@/lib/i18n/config";
 
-/** The wordmark in each language. Same two-part structure, same hierarchy. */
-const wordmark = {
-  en: { primary: "KSA Rehla", secondary: "Transfers" },
-  ar: { primary: "KSA Rehla", secondary: "Transfers" },
-} as const;
+import logo from "@/public/images/logo.webp";
 
 /**
- * Wordmark. Drawn rather than imported so it inherits the brand colour tokens
- * and stays crisp at any size without shipping an image.
+ * The brand lockup.
+ *
+ * One supplied artwork, used in both languages: the mark reads as the brand
+ * rather than as a translated phrase, so swapping it per locale would make the
+ * site look like two businesses. It is imported rather than referenced by path
+ * so the bundler carries its real dimensions — that fixes the aspect ratio at
+ * build time and leaves no layout shift as it loads.
+ *
+ * The artwork was supplied as a 652 KB PNG with a wide transparent margin.
+ * `public/images/logo.webp` is the same artwork trimmed to its ink and encoded
+ * as WebP (39 KB), which is what ships; the original PNG is kept in the
+ * repository as the source file.
  */
 export function SiteLogo({
   locale,
@@ -23,61 +30,42 @@ export function SiteLogo({
 }: {
   locale: Locale;
   className?: string;
-  /** "invert" is for placement on dark photography. */
+  /** "invert" is for placement on dark surfaces — the footer, dark photography. */
   tone?: "default" | "invert";
 }) {
-  const mark = wordmark[locale];
+  const dark = tone === "invert";
 
   return (
     <Link
       href={href(locale, "home")}
+      /*
+       * The lockup carries the brand name as artwork, so the accessible name
+       * is set here and the image itself is marked decorative. Without that,
+       * a screen reader announces the brand twice.
+       */
       aria-label={`${site.name} — ${ui.home[locale]}`}
       className={cn(
-        "group inline-flex items-center gap-2.5 rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4",
-        tone === "invert" ? "text-white" : "text-ink",
+        "inline-flex shrink-0 items-center rounded-lg focus-visible:outline-2 focus-visible:outline-offset-4",
+        /*
+         * The wordmark is deep green on transparent, which disappears against
+         * a dark surface. Rather than guess at a recoloured version of someone
+         * else's artwork — the mark's white emblem and silver vehicle would
+         * dissolve into any flat repaint — it sits on a light plate, so the
+         * brand is reproduced exactly as drawn and the contrast is guaranteed.
+         * A dedicated reverse lockup, if one is ever supplied, would replace
+         * this with a straight swap of the `src`.
+         */
+        dark && "bg-white/95 px-2.5 py-1.5 shadow-sm",
         className
       )}
     >
-      <span
-        aria-hidden
-        className={cn(
-          "grid size-9 shrink-0 place-items-center rounded-[0.6rem] transition-colors",
-          tone === "invert"
-            ? "bg-white/15 ring-1 ring-white/25"
-            : "bg-palm text-white"
-        )}
-      >
-        {/* A road narrowing to the horizon — the one visual mark of the brand. */}
-        <svg viewBox="0 0 24 24" className="size-5" fill="none" aria-hidden>
-          <path
-            d="M4.5 21 9.8 4.2a1.6 1.6 0 0 1 1.53-1.12h1.34c.7 0 1.32.45 1.53 1.12L19.5 21"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-          />
-          <path
-            d="M12 6.4v2.3M12 11.6v2.3M12 16.8v2.4"
-            stroke="currentColor"
-            strokeWidth="1.7"
-            strokeLinecap="round"
-            opacity="0.75"
-          />
-        </svg>
-      </span>
-      <span className="flex flex-col leading-none">
-        <span className="font-heading text-[1.3rem] tracking-tight">
-          {mark.primary}
-        </span>
-        <span
-          className={cn(
-            "text-[0.62rem] font-semibold tracking-[0.22em] uppercase",
-            locale === "ar" && "tracking-normal normal-case",
-            tone === "invert" ? "text-white/70" : "text-muted-foreground"
-          )}
-        >
-          {mark.secondary}
-        </span>
-      </span>
+      <Image
+        src={logo}
+        alt=""
+        priority
+        sizes="(max-width: 768px) 132px, 150px"
+        className={cn("h-9 w-auto md:h-10", dark && "h-8 md:h-9")}
+      />
     </Link>
   );
 }

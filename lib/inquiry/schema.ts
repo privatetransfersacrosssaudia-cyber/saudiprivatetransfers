@@ -1,9 +1,9 @@
 /**
  * The quote form's functional specification.
  *
- * Mirrors the original Saudi Private Transfers quote form
- * (`components/QuoteForm.tsx` in taxiservicesaudiaa/sauditaxi) field for
- * field, because both websites feed one CRM and one `public.leads` table:
+ * Inherits the original quote form's fields one for one. The field set is
+ * deliberately unchanged: it is what the CRM's `public.leads` table stores,
+ * and this project now owns both ends of it.
  *
  * | form `name`   | input        | browser-required | CRM key           |
  * |---------------|--------------|------------------|-------------------|

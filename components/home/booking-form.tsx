@@ -32,11 +32,11 @@ const initialState: InquiryState = { status: "idle" };
 /**
  * Quote request form.
  *
- * Functionally the original Saudi Private Transfers form — same field names,
- * options, defaults, browser-required fields, attribution fields and CRM
- * schema (lib/inquiry/schema.ts) — in this website's own design. It submits
- * through a Server Action that validates with the CRM's schema and hands the
- * lead to the shared CRM; the UI only says "received" when the CRM said so.
+ * Functionally the original quote form — same field names, options, defaults,
+ * browser-required fields, attribution fields and lead schema
+ * (lib/inquiry/schema.ts) — in this website's own design. It submits through a
+ * Server Action that validates with that schema and hands the lead to this
+ * site's own CRM; the UI only says "received" once the lead is stored.
  *
  * "Send another request" remounts the inner form, so each request gets a
  * fresh submission id (the CRM's duplicate-protection key).

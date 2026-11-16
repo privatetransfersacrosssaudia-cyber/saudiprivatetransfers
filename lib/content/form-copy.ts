@@ -5,8 +5,7 @@ import type { FormValues } from "@/lib/inquiry/schema";
  * Everything the quote form says, in both languages.
  *
  * The fields, their order of meaning, options and rules follow the original
- * Saudi Private Transfers form (see lib/inquiry/schema.ts); the wording is
- * this website's own. It makes no promise the site does not make elsewhere:
+ * quote form (see lib/inquiry/schema.ts); the wording is this website's own. It makes no promise the site does not make elsewhere:
  * a written quotation, not a "fixed price".
  */
 

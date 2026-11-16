@@ -8,7 +8,7 @@ import staticAssetsIncrementalCache from "@opennextjs/cloudflare/overrides/incre
 // Without this file the Cloudflare build auto-generates a config with an R2
 // incremental cache but no R2 binding, so every request misses the cache and
 // the Worker renders every page in full — the cause of 1102 resource-limit
-// errors seen on the Saudi Taxi Worker before the same fix.
+// errors seen on an earlier deployment of this stack before the same fix.
 export default defineCloudflareConfig({
   incrementalCache: staticAssetsIncrementalCache,
 });

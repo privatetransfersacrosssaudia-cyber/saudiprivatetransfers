@@ -1,4 +1,11 @@
-// Cloudflare Workers configuration for KSA Rehla Transfers (ksarehlatransfers.com).
+// Cloudflare Workers configuration for this site.
+//
+// NOTE: `name` and the self-reference below are the DEPLOYED Worker's
+// identifiers, not branding. They are left exactly as deployed on purpose:
+// renaming a Worker does not move it, it creates a second one and orphans the
+// first. The customer-facing brand lives in lib/site.ts. If the Worker and
+// the custom domain are ever renamed, change both strings here together and
+// re-point the route in the Cloudflare dashboard.
 //
 // Committed so the Cloudflare build does not rely on `wrangler deploy`'s
 // automatic Next.js setup. That auto-setup generated a config whose
@@ -6,7 +13,7 @@
 // package ("private-transfer-across-saudia"), which does not exist, so the
 // first deploy failed (code 10143). The self-reference must match `name`.
 //
-// Mirrors the setup proven on the Saudi Taxi Worker: no R2 bucket; prerendered
+// Mirrors a setup already proven on this stack: no R2 bucket; prerendered
 // pages are served from Workers Static Assets (see open-next.config.ts).
 {
 	"$schema": "node_modules/wrangler/config-schema.json",
@@ -31,12 +38,14 @@
 	"vars": {
 		// Next's response cache (minimal mode, as OpenNext runs it) keeps up to
 		// 150 rendered responses in memory per Worker instance. Inside the 128 MB
-		// Worker memory cap that caused 1102 errors on the Saudi Taxi Worker
-		// during crawls; the cache only dedupes requests within a 10 s window, so
+		// Worker memory cap that caused 1102 errors on an earlier deployment of
+		// this stack during crawls; the cache only dedupes requests within a 10 s
+		// window, so
 		// a small size loses nothing.
 		"NEXT_PRIVATE_RESPONSE_CACHE_MAX_SIZE": "10"
 	},
-	// CRM_INTAKE_URL, CRM_INTAKE_TOKEN and any other secrets are set in the
+	// Every secret -- SUPABASE_SERVICE_ROLE_KEY, CRM_SESSION_SECRET,
+	// RESEND_API_KEY and the rest of docs/crm/environment.md -- is set in the
 	// Cloudflare dashboard, never here. keep_vars stops a deploy from removing
 	// dashboard-set variables.
 	"keep_vars": true,

@@ -1,13 +1,19 @@
 import { z } from "zod";
 
 /**
- * The CRM's canonical lead contract.
+ * The canonical lead contract.
  *
- * VERBATIM COPY of `lib/leadSchema.ts` in the Saudi Private Transfers CRM
- * repository (taxiservicesaudiaa/sauditaxi). Both websites feed the same
- * `public.leads` table, and the CRM's `/api/leads/intake` endpoint validates
- * every lead from this website with the original schema again — so the two
- * copies must stay identical. Change the CRM's copy first, then this one.
+ * This is the single definition of a lead's shape for this project: the quote
+ * form fills it, the Server Action validates against it, and
+ * `lib/crm/leads.ts` stores it in this project's own `public.leads` table.
+ *
+ * The field set is inherited unchanged from the original quote form, so the
+ * form, its validation and the stored shape are all exactly as they were.
+ * What is gone is the arrangement that once kept this file in step with
+ * another repository's copy and posted each lead to that site's intake
+ * endpoint — this project now owns the schema and the table. There is no
+ * second copy to synchronise with: change this file and run the matching
+ * migration in `supabase/schema.sql`.
  */
 
 /** Trim strings, convert "" to undefined, and cap length to sanitize input. */

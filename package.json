@@ -11,12 +11,15 @@
     "qa": "node scripts/qa-crawl.mjs",
     "cf:build": "opennextjs-cloudflare build",
     "preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
-    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy"
+    "deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "crm:verify": "node scripts/crm-verify.mjs"
   },
   "dependencies": {
     "@base-ui/react": "^1.9.0",
+    "@supabase/supabase-js": "^2.106.2",
     "class-variance-authority": "^0.7.1",
     "cn": "^0.5.2",
+    "jose": "^6.2.3",
     "lucide-react": "^1.67.0",
     "next": "16.4.4",
     "react": "19.3.0",

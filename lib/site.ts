@@ -8,13 +8,13 @@
  * is used, so a build that forgets the variable still emits correct URLs.
  */
 
-const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://ksarehlatransfers.com";
+const rawUrl = process.env.NEXT_PUBLIC_SITE_URL ?? "https://privatetransfersacrosssaudia.com";
 
 export const site = {
-  name: "KSA Rehla Transfers",
-  shortName: "KSA Rehla Transfers",
+  name: "Private Transfers Across Saudi",
+  shortName: "Private Transfers Across Saudi",
   /** Used in the SEO title after the main keyword. */
-  brand: "KSA Rehla Transfers",
+  brand: "Private Transfers Across Saudi",
   url: rawUrl.replace(/\/$/, ""),
   /** Default site description, per locale. Pages override with their own. */
   description: {
@@ -42,4 +42,4 @@ export const site = {
 } as const;
 
 export const absoluteUrl = (path = "/") =>
-  new URL(path, site.url || "https://ksarehlatransfers.com").toString();
+  new URL(path, site.url || "https://privatetransfersacrosssaudia.com").toString();

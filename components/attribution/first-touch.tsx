@@ -3,14 +3,14 @@
 import { useEffect } from "react";
 
 /**
- * Lead attribution, matching the original Saudi Private Transfers form.
+ * Lead attribution, carried over from the original quote form.
  *
- * The original form stores first-touch data in localStorage under
- * `spt_first_touch` and, at submit time, adds the current page's landing URL,
- * referrer, UTM source/medium/campaign, gclid and a google_organic flag. The
- * same keys and rules are used here so both websites fill the CRM's
- * attribution columns identically. (The original captures no utm_term or
- * utm_content, so neither does this.)
+ * First-touch data is kept in localStorage under `spt_first_touch` and, at
+ * submit time, the current page's landing URL, referrer, UTM
+ * source/medium/campaign, gclid and a google_organic flag are added. The keys
+ * and rules are inherited unchanged, so the CRM's attribution columns are
+ * filled exactly as they were designed to be. (No utm_term or utm_content is
+ * captured, which matches the column set.)
  *
  * The original form appears on almost every page, so its first touch is the
  * visitor's real landing page. Here the form lives only on the quote page,
