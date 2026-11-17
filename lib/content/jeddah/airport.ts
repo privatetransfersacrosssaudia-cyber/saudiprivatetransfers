@@ -160,10 +160,10 @@ export const jeddahAirport: JeddahAirportContent = {
       },
       {
         name: { en: "To Madinah", ar: "إلى المدينة المنورة" },
-        meta: { en: "405–450 km · ~3.75–5 hrs", ar: "405–450 كم · ~3.75–5 ساعات" },
+        meta: { en: "405–450 km · ~4–5 hrs", ar: "405–450 كم · ~4–5 ساعات" },
         detail: {
-          en: "A long drive north, and often the second leg of a pilgrimage trip. Worth planning rather than deciding at the carousel: it is most of a day once you have already flown.",
-          ar: "رحلة طويلة شمالًا، وغالبًا المرحلة الثانية في رحلة حج أو عمرة. وتستحق التخطيط لا القرار عند سير الأمتعة: فهي معظم يوم بعد أن سافرت جوًّا أصلًا.",
+          en: "A long drive north, and often the second leg of a pilgrimage trip. Worth planning rather than deciding at the carousel: it is most of a day once you have already flown. The time is a driving estimate before stops and moves with traffic and the hour of day.",
+          ar: "رحلة طويلة شمالًا، وغالبًا المرحلة الثانية في رحلة حج أو عمرة. وتستحق التخطيط لا القرار عند سير الأمتعة: فهي معظم يوم بعد أن سافرت جوًّا أصلًا. والزمن تقدير قيادة قبل التوقف، ويتغير بحركة المرور وساعة اليوم.",
         },
         caveat: {
           en: "The Haramain train reaches Madinah from a station at this airport, and for one or two people travelling light it is usually the better answer. We will tell you so.",

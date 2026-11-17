@@ -296,6 +296,14 @@ export const dammam: DammamContent = {
 
   related: [
     {
+      routeKey: "dammamAirport",
+      label: { en: "Dammam airport transfers", ar: "النقل من مطار الدمام" },
+      note: {
+        en: "King Fahd International in detail: the road out to each of the three cities, and both directions.",
+        ar: "مطار الملك فهد الدولي بالتفصيل: الطريق إلى كل من المدن الثلاث، وفي الاتجاهين.",
+      },
+    },
+    {
       routeKey: "jubail",
       label: { en: "Jubail", ar: "الجبيل" },
       note: {

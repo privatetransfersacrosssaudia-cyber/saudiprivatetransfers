@@ -346,6 +346,14 @@ export const makkah: MakkahContent = {
 
   related: [
     {
+      routeKey: "makkahToMadinah",
+      label: { en: "Makkah to Madinah", ar: "من مكة إلى المدينة" },
+      note: {
+        en: "The 440–450 km road north, in both directions, with an honest comparison against the Haramain train.",
+        ar: "الطريق شمالًا على مدى 440–450 كم، في الاتجاهين، مع مقارنة صادقة بقطار الحرمين.",
+      },
+    },
+    {
       routeKey: "jeddahToMakkah",
       label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },
       note: {

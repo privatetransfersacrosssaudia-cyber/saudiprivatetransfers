@@ -132,7 +132,7 @@ export const jeddahHub: JeddahHubContent = {
           ar: "شمالًا على الساحل ثم إلى الداخل، وغالبًا كمرحلة ثانية في رحلة حج أو عمرة أو انتقال بين المدينتين المقدستين.",
         },
         distance: { en: "405–450 km", ar: "405–450 كم" },
-        duration: { en: "~3.75–5 hrs", ar: "~3.75–5 ساعات" },
+        duration: { en: "~4–5 hrs", ar: "~4–5 ساعات" },
         caveat: {
           en: "The Haramain train also runs this corridor and is often the better answer for one or two people travelling light.",
           ar: "وقطار الحرمين يخدم هذا الممر أيضًا، وهو غالبًا الجواب الأفضل لشخص أو شخصين بأمتعة خفيفة.",
@@ -176,8 +176,8 @@ export const jeddahHub: JeddahHubContent = {
       },
     ],
     footnote: {
-      en: "Published figures for these roads disagree with each other, which is why they appear as ranges. We quote on your two actual addresses, so the distance in your quotation may not match any route planner exactly.",
-      ar: "الأرقام المنشورة لهذه الطرق تتعارض فيما بينها، ولهذا تظهر كنطاقات. ونحن نُسعّر على عنوانيك الفعليين، فقد لا تطابق المسافة في عرض السعر أي أداة تخطيط مسارات تمامًا.",
+      en: "Published figures for these roads disagree with each other, which is why they appear as ranges. We quote on your two actual addresses, so the distance in your quotation may not match any route planner exactly. The times are driving estimates before stops, and they move with traffic, weather, roadworks and the hour of day — none of them is a guaranteed arrival time.",
+      ar: "الأرقام المنشورة لهذه الطرق تتعارض فيما بينها، ولهذا تظهر كنطاقات. ونحن نُسعّر على عنوانيك الفعليين، فقد لا تطابق المسافة في عرض السعر أي أداة تخطيط مسارات تمامًا. والأزمنة تقديرات قيادة قبل التوقف، وتتغير بحركة المرور والطقس وأعمال الطرق وساعة اليوم — وليس أي منها وقت وصول مضمونًا.",
     },
   },
 
@@ -354,6 +354,22 @@ export const jeddahHub: JeddahHubContent = {
   ],
 
   related: [
+    {
+      routeKey: "jeddahHotel",
+      label: { en: "Jeddah hotel transfers", ar: "النقل من فنادق جدة" },
+      note: {
+        en: "The arrival, moving around a city that runs for kilometres, and the leg on to Makkah or Madinah.",
+        ar: "الوصول، والتنقل في مدينة تمتد كيلومترات، والرحلة التالية إلى مكة أو المدينة.",
+      },
+    },
+    {
+      routeKey: "jeddahToMadinah",
+      label: { en: "Jeddah to Madinah", ar: "من جدة إلى المدينة" },
+      note: {
+        en: "The road north, and an honest account of when the Haramain train beats it.",
+        ar: "الطريق شمالًا، وبيان صادق لمتى يتفوق عليه قطار الحرمين.",
+      },
+    },
     {
       routeKey: "jeddahToMakkah",
       label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },

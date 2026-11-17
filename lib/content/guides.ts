@@ -54,7 +54,7 @@ export const guides: Guide[] = [
       en: "What to expect on the drive of approximately 440–450 km between the two holy cities: typical timings, where people stop, and how to plan the leg around hotel check-in.",
       ar: "ما الذي تتوقعه في الرحلة البرية بين المدينتين المقدستين، وطولها نحو 440–450 كم: التوقيتات المعتادة، وأماكن التوقف، وكيفية ترتيب الرحلة حول موعد دخول الفندق.",
     },
-    imageKey: "guide-desert",
+    imageKey: "dest-madinah",
     planned: true,
   },
 ];

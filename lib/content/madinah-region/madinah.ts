@@ -317,6 +317,22 @@ export const madinah: MadinahContent = {
 
   related: [
     {
+      routeKey: "madinahAirport",
+      label: { en: "Madinah airport transfers", ar: "النقل من مطار المدينة" },
+      note: {
+        en: "Prince Mohammad bin Abdulaziz in detail: arrivals timed to your flight, departures worked back from check-in.",
+        ar: "مطار الأمير محمد بن عبدالعزيز بالتفصيل: استقبال مضبوط على رحلتك، ومغادرة محسوبة من موعد إجراءات السفر.",
+      },
+    },
+    {
+      routeKey: "makkahToMadinah",
+      label: { en: "Madinah to Makkah", ar: "من المدينة إلى مكة" },
+      note: {
+        en: "The road south in full: the Miqat stop at Dhu al-Hulayfah, the checkpoint, and car against train.",
+        ar: "الطريق جنوبًا كاملًا: التوقف عند ميقات ذي الحليفة، ونقطة التفتيش، والسيارة مقابل القطار.",
+      },
+    },
+    {
       routeKey: "makkah",
       label: { en: "Private transfers in Makkah", ar: "توصيل خاص في مكة المكرمة" },
       note: {

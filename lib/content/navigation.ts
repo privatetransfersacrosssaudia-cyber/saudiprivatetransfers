@@ -513,8 +513,11 @@ export function footerNav(
           href: homeAnchor(locale, "pilgrimage"),
         },
         {
+          // The only one of these four with a page of its own. The other three
+          // stay on the homepage section until they have somewhere real to go;
+          // a link to a page that does not exist is worse than an anchor.
           label: t({ en: "Makkah to Madinah", ar: "مكة إلى المدينة" }, locale),
-          href: homeAnchor(locale, "pilgrimage"),
+          href: href(locale, "makkahToMadinah"),
         },
       ],
     },

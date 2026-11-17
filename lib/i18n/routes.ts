@@ -27,7 +27,11 @@ export const route = {
   riyadhHotel: "riyadh-hotel-transfers",
   jeddah: "jeddah",
   jeddahAirport: "jeddah-airport-transfers",
+  jeddahHotel: "jeddah-hotel-transfers",
   jeddahToMakkah: "jeddah-to-makkah",
+  jeddahToMadinah: "jeddah-to-madinah",
+  makkahToMadinah: "makkah-to-madinah",
+  madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
   shaqra: "shaqra",
@@ -38,6 +42,7 @@ export const route = {
   alula: "alula",
   yanbu: "yanbu",
   dammam: "dammam",
+  dammamAirport: "dammam-airport-transfers",
   jubail: "jubail",
   alAhsa: "al-ahsa",
   abha: "abha",
@@ -83,8 +88,19 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   jeddah: { priority: 0.9, changeFrequency: "weekly" },
   // Level with the Riyadh airport page: the highest-intent journey in Jeddah.
   jeddahAirport: { priority: 0.8, changeFrequency: "monthly" },
+  // Ranked with its Riyadh counterpart: a hotel page is a smaller intent than
+  // an airport page, and ranking it alongside one would misstate that.
+  jeddahHotel: { priority: 0.6, changeFrequency: "monthly" },
   // The dominant Jeddah intent, so level with the airport page.
   jeddahToMakkah: { priority: 0.8, changeFrequency: "monthly" },
+  // A corridor page, ranked with the other intercity routes.
+  jeddahToMadinah: { priority: 0.8, changeFrequency: "monthly" },
+  // The pilgrimage corridor, and the most requested intercity journey on the
+  // site — ranked with the established Jeddah route rather than below it.
+  makkahToMadinah: { priority: 0.8, changeFrequency: "monthly" },
+  // An airport service page, ranked with the other two rather than with the
+  // destination hubs it sits under.
+  madinahAirport: { priority: 0.8, changeFrequency: "monthly" },
   // Riyadh Region destination hubs. Below the city hubs and the main routes:
   // smaller markets, and operational coverage is still to be confirmed.
   alKharj: { priority: 0.7, changeFrequency: "monthly" },
@@ -104,6 +120,8 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // and Dhahran, level with the other city hubs; Al Ahsa and Jubail are
   // destination hubs a step below.
   dammam: { priority: 0.9, changeFrequency: "weekly" },
+  // The Eastern Province gateway, ranked with the other airport pages.
+  dammamAirport: { priority: 0.8, changeFrequency: "monthly" },
   alAhsa: { priority: 0.8, changeFrequency: "monthly" },
   jubail: { priority: 0.7, changeFrequency: "monthly" },
   // Asir Region. One hub for Abha and Khamis Mushait, level with the other
