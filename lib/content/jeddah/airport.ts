@@ -371,8 +371,8 @@ export const jeddahAirport: JeddahAirportContent = {
   quotation: {
     heading: { en: "What your quotation covers", ar: "ما يشمله عرض السعر" },
     lead: {
-      en: "We describe how the price is arrived at rather than publishing a generic list of inclusions: what is included is confirmed for your journey, in writing. You will find competitors who publish waiting minutes and vehicle models; we would rather be right than specific.",
-      ar: "نشرح كيف يُحتسب السعر بدل نشر قائمة عامة بما يشمله، فما يشمله يُؤكَّد لرحلتك كتابةً. وستجد منافسين ينشرون دقائق انتظار وطُرز مركبات؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
+      en: "We describe how the price is arrived at rather than publishing a generic list of inclusions: what is included is confirmed for your journey, in writing. Sixty minutes of waiting time is included on every transfer; beyond that, you will find competitors who publish named vehicle models we would not be able to stand behind.",
+      ar: "نشرح كيف يُحتسب السعر بدل نشر قائمة عامة بما يشمله، فما يشمله يُؤكَّد لرحلتك كتابةً. ومدة الانتظار المشمولة ستون دقيقة في كل رحلة؛ وفيما عدا ذلك ستجد منافسين ينشرون طُرز مركبات بالاسم لا نستطيع نحن الالتزام بها.",
     },
     items: [
       {
@@ -392,8 +392,8 @@ export const jeddahAirport: JeddahAirportContent = {
         ar: "السعر الإجمالي، مكتوبًا، قبل حجز أي شيء — ولا شيء يُضاف بعد ذلك.",
       },
       {
-        en: "What it does not state: a waiting-time allowance in minutes, a named vehicle model, a named meeting landmark, or a rail schedule. The first three are confirmed for your booking; the last belongs to the operator.",
-        ar: "وما لا يذكره: مدة انتظار بالدقائق، أو طراز مركبة بالاسم، أو معلم لقاء بالاسم، أو جدول قطارات. فالثلاثة الأولى تُؤكَّد لحجزك، والأخير من شأن المشغّل.",
+        en: "What it does not state: a named vehicle model, a named meeting landmark, or a rail schedule. The first two are confirmed for your booking; the last belongs to the operator.",
+        ar: "وما لا يذكره: طراز مركبة بالاسم، أو معلم لقاء بالاسم، أو جدول قطارات. فالأولان يُؤكَّدان لحجزك، والأخير من شأن المشغّل.",
       },
       {
         en: "We arrange road transport only — not flights, not rail tickets, not hotels, and not Hajj or Umrah visas, permits or packages.",
@@ -464,8 +464,8 @@ export const jeddahAirport: JeddahAirportContent = {
         ar: "هل توفرون وقت انتظار مجانيًا إذا تأخرت رحلتي؟",
       },
       answer: {
-        en: "A delay does not leave you without a vehicle, because the pickup is set from your flight number rather than a clock time — that is the point of asking for it. What we will not do is publish an allowance in minutes, because waiting arrangements are confirmed journey by journey and a blanket number we cannot stand behind is worse than none. It is stated in your quotation for your booking. You will find competitors who publish a figure; we would rather be right than specific.",
-        ar: "التأخير لا يتركك بلا سيارة، لأن موعد الاستقبال محدد من رقم رحلتك لا من توقيت الساعة — وهذا هو الغرض من طلبه. أما ما لن نفعله فهو نشر مدة بالدقائق، لأن ترتيبات الانتظار تُؤكَّد لكل رحلة على حدة، ورقم عام لا نستطيع الدفاع عنه أسوأ من لا رقم. ويُذكر ذلك في عرض سعرك لحجزك. وستجد منافسين ينشرون رقمًا؛ ونحن نفضّل أن نكون على صواب على أن نكون محددين.",
+        en: "Yes — sixty minutes of waiting time is included. A delay does not leave you without a vehicle either, because the pickup is set from your flight number rather than a clock time, so a late landing moves the pickup instead of eating into that hour. That is the point of asking for the flight number, and it is why it is worth giving us one.",
+        ar: "نعم — مدة الانتظار المشمولة ستون دقيقة. كما أن التأخير لا يتركك بلا سيارة، لأن موعد الاستقبال محدد من رقم رحلتك لا من توقيت الساعة، فالهبوط المتأخر يُزيح موعد الاستقبال بدل أن يستهلك تلك الساعة. وهذا هو الغرض من طلب رقم الرحلة، ولهذا يستحق أن تزوّدنا به.",
       },
     },
     {

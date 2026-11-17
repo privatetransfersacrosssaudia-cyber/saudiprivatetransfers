@@ -4,6 +4,15 @@ const nextConfig: NextConfig = {
   /* config options here */
   experimental: {
     agentFeedback: true,
+    /**
+     * Records that this app's Next.js version was raised by the framework's
+     * own security upgrade flow (16.4.4 -> 16.4.6), addressing the advisory
+     * about information disclosure across root params when a `use cache`
+     * function is called through `unstable_cache()`. This project has root
+     * params (`[locale]`) and `cacheComponents` enabled, so it is exactly the
+     * shape that advisory describes.
+     */
+    agentUpgrade: "security",
   },
   /**
    * Emits `.next/standalone`, including the `*.nft.json` file traces.

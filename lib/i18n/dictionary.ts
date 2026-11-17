@@ -81,13 +81,32 @@ export const ui = {
     en: "All rights reserved.",
     ar: "جميع الحقوق محفوظة.",
   },
-  footerPhotoCredit: {
-    en:
-      "Photography by Wikimedia Commons contributors, used under Creative " +
-      "Commons and public domain licences.",
-    ar:
-      "الصور من مساهمي ويكيميديا كومنز، مستخدمة بموجب رخص المشاع الإبداعي " +
-      "والملكية العامة.",
+  /** Links the attribution the photograph licences require. */
+  footerPhotoCredits: {
+    en: "Photo credits",
+    ar: "حقوق الصور",
+  },
+  footerEmailLabel: {
+    en: "Email",
+    ar: "البريد الإلكتروني",
+  },
+  footerWhatsappLabel: {
+    en: "WhatsApp",
+    ar: "واتساب",
+  },
+  /** Sub-line on the mobile quote bar, so the button is not a bare verb. */
+  quoteBarHint: {
+    en: "Tell us your journey, get a price",
+    ar: "أخبرنا بتفاصيل رحلتك واحصل على السعر",
+  },
+  whatsappAria: {
+    en: "Message us on WhatsApp",
+    ar: "راسلنا على واتساب",
+  },
+  /** Prefilled into the WhatsApp thread so the first message is not empty. */
+  whatsappPrefill: {
+    en: "Hello — I would like a quote for a private transfer.",
+    ar: "مرحبًا، أرغب في الحصول على عرض سعر لرحلة نقل خاصة.",
   },
 } satisfies Record<string, Bilingual<string>>;
 

@@ -2,6 +2,7 @@ import Image from "next/image";
 import { ArrowRightIcon, MapPinnedIcon, PlaneLandingIcon } from "lucide-react";
 
 import { QuoteStartForm } from "@/components/home/quote-start-form";
+import { HeroSentinel } from "@/components/layout/site-header";
 import { homeCopy } from "@/lib/content/home-copy";
 import { altText } from "@/lib/images";
 import { image } from "@/lib/site-images";
@@ -20,9 +21,22 @@ export function HeroSection({ locale }: { locale: Locale }) {
 
   return (
     <section
-      className="relative isolate overflow-hidden bg-ink"
+      /*
+        Pulled up by exactly the header's height so the photograph runs behind
+        the bar instead of starting below it. Without this the header has
+        nothing of the hero to be transparent over — it sits in normal flow
+        above it, so going transparent revealed the light page background and
+        the white nav links disappeared against it.
+
+        The top padding puts the height back, so the headline sits where it
+        did before and nothing hides under the bar.
+      */
+      className="relative isolate -mt-16 overflow-hidden bg-ink md:-mt-18"
       aria-labelledby="hero-title"
     >
+      {/* Asks the header for its transparent treatment while this is on
+          screen. See components/layout/site-header.tsx. */}
+      <HeroSentinel />
       {/* Photography, dimmed enough for AA-contrast text over it. */}
       <Image
         src={hero.src}
@@ -40,7 +54,7 @@ export function HeroSection({ locale }: { locale: Locale }) {
         className="absolute inset-0 -z-10 bg-gradient-to-b from-ink/92 via-ink/78 to-ink/94"
       />
 
-      <div className="site-container relative py-14 lg:py-20">
+      <div className="site-container relative pt-30 pb-14 md:pt-32 lg:pt-38 lg:pb-20">
         <div className="mx-auto max-w-3xl text-center">
           <p className="text-eyebrow text-brass">{copy.eyebrow[locale]}</p>
 

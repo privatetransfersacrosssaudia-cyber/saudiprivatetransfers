@@ -46,6 +46,12 @@ export const route = {
   tabuk: "tabuk",
   buraydah: "buraydah",
   unaizah: "unaizah",
+  credits: "credits",
+  saudiToBahrain: "saudi-to-bahrain",
+  about: "about",
+  contact: "contact",
+  privacy: "privacy",
+  terms: "terms",
 } as const;
 
 export type RouteKey = keyof typeof route;
@@ -113,6 +119,26 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // hubs.
   buraydah: { priority: 0.9, changeFrequency: "weekly" },
   unaizah: { priority: 0.9, changeFrequency: "weekly" },
+  // A reference page, not a destination. Indexable because the attribution it
+  // carries is a licence obligation and should be publicly findable, but it
+  // competes for nothing and sits at the bottom of the priority range.
+  credits: { priority: 0.1, changeFrequency: "monthly" },
+  // A reference guide rather than a service page, but the subject is heavily
+  // searched and the page is substantial, so it sits with the city hubs.
+  // `changeFrequency` is weekly because border and visa rules move and the
+  // guide carries a verification date that should be seen to be current.
+  saudiToBahrain: { priority: 0.8, changeFrequency: "weekly" },
+  // A trust page rather than a landing page: people reach it to decide whether
+  // to enquire, not from a search for a route. Indexable and linked, but it
+  // should never outrank a destination.
+  about: { priority: 0.5, changeFrequency: "monthly" },
+  // Reached deliberately, by someone who has already decided to get in touch.
+  // It carries the quote form, so it is indexable, but it competes for nothing.
+  contact: { priority: 0.5, changeFrequency: "monthly" },
+  // A legal page: it must be indexable and findable, but it should never
+  // compete with a destination for attention.
+  privacy: { priority: 0.2, changeFrequency: "monthly" },
+  terms: { priority: 0.2, changeFrequency: "monthly" },
 };
 
 /** Pages deliberately kept out of the index; see each page's robots meta. */

@@ -255,8 +255,8 @@ export const jeddahHub: JeddahHubContent = {
         ar: "ولا يُحجز شيء ولا يُدفع أي مبلغ حتى توافق عليه — ولا شيء يُضاف بعد ذلك.",
       },
       {
-        en: "What the quotation does not state: a waiting-time policy, a standing arrangement at any hotel or terminal, or a rail schedule. Those are confirmed for your booking, or they belong to the operator.",
-        ar: "وما لا يذكره عرض السعر: سياسة لوقت الانتظار، أو ترتيب ثابت في فندق أو صالة، أو جدول قطارات. فهذه تُؤكَّد لحجزك، أو هي من شأن المشغّل.",
+        en: "What the quotation does not state: a standing arrangement at any hotel or terminal, or a rail schedule. The first is confirmed for your booking; the second belongs to the operator.",
+        ar: "وما لا يذكره عرض السعر: ترتيب ثابت في فندق أو صالة، أو جدول قطارات. فالأول يُؤكَّد لحجزك، والثاني من شأن المشغّل.",
       },
       {
         en: "We arrange road transport only. Not flights, not rail tickets, not hotels, and not Hajj or Umrah visas, permits or packages.",

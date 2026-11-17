@@ -231,8 +231,8 @@ export const homeCopy = {
       {
         title: { en: "Built around your timing", ar: "مبنية على توقيتك" } satisfies B,
         body: {
-          en: "Pickups are set to your flight or your hotel check-out, not to a fixed timetable. Waiting time is agreed up front.",
-          ar: "يُضبط موعد الاستقبال على رحلتك أو على مغادرتك الفندق، لا على جدول ثابت. ويُتفق على وقت الانتظار مسبقًا.",
+          en: "Pickups are set to your flight or your hotel check-out, not to a fixed timetable. Sixty minutes of waiting time is included.",
+          ar: "يُضبط موعد الاستقبال على رحلتك أو على مغادرتك الفندق، لا على جدول ثابت. ومدة الانتظار المشمولة ستون دقيقة.",
         } satisfies B,
       },
       {

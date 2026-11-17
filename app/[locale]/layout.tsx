@@ -8,6 +8,7 @@ import {
 } from "next/font/google";
 
 import { FirstTouchRecorder } from "@/components/attribution/first-touch";
+import { FloatingActions } from "@/components/layout/floating-actions";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ui } from "@/lib/i18n/dictionary";
@@ -133,6 +134,17 @@ export default async function LocaleLayout({
           {children}
         </main>
         <SiteFooter locale={active} />
+        {/*
+          Clearance for the sticky quote bar, which is fixed and so takes no
+          space of its own. Without this the bar covers the last line of the
+          footer on every phone. It matches the bar's height plus the home
+          indicator, and collapses at `lg` where the bar is hidden.
+        */}
+        <div
+          aria-hidden
+          className="h-[calc(4.75rem+env(safe-area-inset-bottom,0px))] lg:hidden"
+        />
+        <FloatingActions locale={active} />
         <FirstTouchRecorder />
       </body>
     </html>

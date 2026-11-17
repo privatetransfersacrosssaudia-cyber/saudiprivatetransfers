@@ -305,3 +305,30 @@
     scroll-behavior: auto !important;
   }
 }
+
+/*
+  The mobile menu's collapsing groups.
+
+  `<details>` has always opened instantly. These rules animate it where the
+  browser can interpolate to `auto` — Chrome, Edge and recent Safari — and are
+  simply ignored everywhere else, which leaves the original instant open. The
+  reduced-motion block above already overrides the transition.
+
+  `interpolate-size` is scoped to these groups rather than set on `:root`, so
+  it cannot change how anything else on the site animates.
+*/
+details[name="mobile-nav"] {
+  interpolate-size: allow-keywords;
+}
+
+details[name="mobile-nav"]::details-content {
+  block-size: 0;
+  overflow: hidden;
+  transition:
+    block-size 220ms ease,
+    content-visibility 220ms allow-discrete;
+}
+
+details[name="mobile-nav"][open]::details-content {
+  block-size: auto;
+}

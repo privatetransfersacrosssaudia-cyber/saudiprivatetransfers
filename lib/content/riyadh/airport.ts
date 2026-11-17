@@ -354,8 +354,8 @@ export const riyadhAirport: AirportPageContent = {
     ],
     withheld: [
       {
-        en: "Waiting time, meet-and-greet arrangements, tolls and child seats: confirmed in your quotation for your booking, not stated as blanket policy here.",
-        ar: "وقت الانتظار وترتيبات الاستقبال والرسوم ومقاعد الأطفال: تُؤكَّد في عرض سعرك لحجزك، ولا تُذكر هنا كسياسة عامة.",
+        en: "Meet-and-greet arrangements, tolls and child seats: confirmed in your quotation for your booking, not stated as blanket policy here. Waiting time is the exception — sixty minutes is included on every transfer.",
+        ar: "ترتيبات الاستقبال والرسوم ومقاعد الأطفال: تُؤكَّد في عرض سعرك لحجزك، ولا تُذكر هنا كسياسة عامة. ووقت الانتظار هو الاستثناء — إذ تشمل كل رحلة ستين دقيقة.",
       },
       {
         en: "A terminal chart. Assignments change, so we confirm yours from your flight and your airline confirms it too.",

@@ -27,15 +27,18 @@ export const site = {
       "والرحلات بين المدن ورحلات الحج والعمرة. أرسل تفاصيل رحلتك واحصل على عرض سعر.",
   },
   /**
-   * Contact routes. These are placeholders until the real channels are
-   * confirmed; the footer and quote flow read from here so there is one place
-   * to update. Leave a value as null to hide it in the UI rather than
-   * publishing a number that does not work.
+   * Contact routes. The footer, the floating WhatsApp button and the quote
+   * flow all read from here, so there is one place to update. A value left as
+   * null is hidden in the UI rather than published as a channel that does not
+   * work.
+   *
+   * `whatsapp` is digits only, in international format with no plus sign and
+   * no spaces — that is the form wa.me expects in its path.
    */
   contact: {
-    email: null as string | null,
-    phone: null as string | null,
-    whatsapp: null as string | null,
+    email: "privatetransfersacrosssaudia@gmail.com" as string | null,
+    phone: "+923148932631" as string | null,
+    whatsapp: "923148932631" as string | null,
   },
   /** Areas the service is positioned around, nationwide rather than one city. */
   serviceArea: "Saudi Arabia",
@@ -43,3 +46,20 @@ export const site = {
 
 export const absoluteUrl = (path = "/") =>
   new URL(path, site.url || "https://privatetransfersacrosssaudia.com").toString();
+
+/**
+ * A wa.me link, optionally carrying a first message.
+ *
+ * Returns null when no WhatsApp number is configured, so every caller has to
+ * decide what to render in that case rather than producing a link to
+ * `wa.me/null`.
+ */
+export function whatsappUrl(message?: string): string | null {
+  const number = site.contact.whatsapp;
+  if (!number) return null;
+  const digits = number.replace(/\D/g, "");
+  if (!digits) return null;
+  return message
+    ? `https://wa.me/${digits}?text=${encodeURIComponent(message)}`
+    : `https://wa.me/${digits}`;
+}

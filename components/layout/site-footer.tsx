@@ -5,6 +5,7 @@ import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { SiteLogo } from "@/components/layout/site-logo";
 import { footerNav, quoteCta } from "@/lib/content/navigation";
 import { ui } from "@/lib/i18n/dictionary";
+import { href } from "@/lib/i18n/routes";
 import { site } from "@/lib/site";
 import type { Locale } from "@/lib/i18n/config";
 
@@ -74,16 +75,52 @@ export function SiteFooter({ locale }: { locale: Locale }) {
           </nav>
         </div>
 
-        <div className="mt-12 border-t border-white/10 pt-7">
+        {/*
+          Contact. Rendered only for the channels that are actually configured
+          in lib/site.ts, so the footer never publishes a dead address. The
+          address and number are real text, selectable and copyable, rather
+          than only a link.
+        */}
+        {/*
+          Email only. The phone number used to sit beside it and is no longer
+          printed here; WhatsApp is still reachable from the floating button
+          on every page, which carries the number in its link rather than on
+          the page. `site.contact.phone` stays set in lib/site.ts because that
+          button and the prefilled messages read from it.
+        */}
+        {site.contact.email ? (
+          <div className="mt-10 border-t border-white/10 pt-7">
+            <p className="text-xs tracking-[0.18em] text-white/45 uppercase">
+              {ui.footerEmailLabel[locale]}
+            </p>
+            <a
+              href={`mailto:${site.contact.email}`}
+              className="numeric mt-1 inline-block text-sm text-white/85 underline-offset-4 hover:text-brass hover:underline"
+              dir="ltr"
+            >
+              {site.contact.email}
+            </a>
+          </div>
+        ) : null}
+
+        <div className="mt-10 border-t border-white/10 pt-7">
           <p className="max-w-3xl text-xs leading-relaxed text-white/60">
             {site.name} {ui.footerDisclaimer[locale]}
           </p>
 
-          <div className="mt-6 flex flex-col gap-3 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
+          <div className="mt-6 flex flex-col gap-2 text-xs text-white/60 sm:flex-row sm:items-center sm:justify-between">
             <p>
               © {site.name}. {ui.footerRights[locale]}
             </p>
-            <p>{ui.footerPhotoCredit[locale]}</p>
+            {/* The photographs are CC BY / CC BY-SA, which require the author
+                and licence to travel with the work. This link carries that
+                obligation; see app/[locale]/credits/page.tsx. */}
+            <Link
+              href={href(locale, "credits")}
+              className="underline-offset-4 transition-colors hover:text-brass hover:underline"
+            >
+              {ui.footerPhotoCredits[locale]}
+            </Link>
           </div>
         </div>
       </div>

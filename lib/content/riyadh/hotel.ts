@@ -223,8 +223,8 @@ export const riyadhHotel: HotelPageContent = {
         ar: "السعر الإجمالي، مكتوبًا، قبل حجز أي شيء — ولا شيء يُضاف بعد ذلك.",
       },
       {
-        en: "What it does not state: a waiting-time policy or a standing arrangement at any particular hotel. Those are confirmed for your booking, because they depend on the property and on the day.",
-        ar: "وما لا يذكره: سياسة لوقت الانتظار أو ترتيب ثابت في فندق معين. فهذه تُؤكَّد لحجزك، لأنها تعتمد على المنشأة وعلى اليوم.",
+        en: "What it does not state: a standing arrangement at any particular hotel. That is confirmed for your booking, because it depends on the property and on the day.",
+        ar: "وما لا يذكره: ترتيب ثابت في فندق معين. فهذا يُؤكَّد لحجزك، لأنه يعتمد على المنشأة وعلى اليوم.",
       },
     ],
     booking: [

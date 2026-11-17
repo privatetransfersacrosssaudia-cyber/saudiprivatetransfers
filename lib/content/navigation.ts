@@ -539,5 +539,36 @@ export function footerNav(
         },
       ],
     },
+    {
+      // Travel information, deliberately in its own group rather than filed
+      // under Services: these guides describe journeys this company does not
+      // operate, and grouping them with our services would blur that.
+      heading: t({ en: "Travel guides", ar: "أدلة السفر" }, locale),
+      links: [
+        {
+          label: t({ en: "About us", ar: "من نحن" }, locale),
+          href: href(locale, "about"),
+        },
+        {
+          label: t({ en: "Contact us", ar: "تواصل معنا" }, locale),
+          href: href(locale, "contact"),
+        },
+        {
+          label: t({ en: "Privacy policy", ar: "سياسة الخصوصية" }, locale),
+          href: href(locale, "privacy"),
+        },
+        {
+          label: t({ en: "Terms and conditions", ar: "الشروط والأحكام" }, locale),
+          href: href(locale, "terms"),
+        },
+        {
+          label: t(
+            { en: "Saudi Arabia to Bahrain", ar: "من السعودية إلى البحرين" },
+            locale
+          ),
+          href: href(locale, "saudiToBahrain"),
+        },
+      ],
+    },
   ];
 }
