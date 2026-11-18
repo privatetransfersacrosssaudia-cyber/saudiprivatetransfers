@@ -346,6 +346,14 @@ export const makkah: MakkahContent = {
 
   related: [
     {
+      routeKey: "riyadhToMakkah",
+      label: { en: "Riyadh to Makkah", ar: "الرياض إلى مكة" },
+      note: {
+        en: "The long way in from the capital: about 870 km on Highway 40, nine to ten hours, and an honest look at whether to drive it at all.",
+        ar: "الطريق الطويل من العاصمة: نحو 870 كم على الطريق 40، وتسع إلى عشر ساعات، ونظرة صادقة في جدوى قطعه برًّا أصلًا.",
+      },
+    },
+    {
       routeKey: "makkahToMadinah",
       label: { en: "Makkah to Madinah", ar: "من مكة إلى المدينة" },
       note: {

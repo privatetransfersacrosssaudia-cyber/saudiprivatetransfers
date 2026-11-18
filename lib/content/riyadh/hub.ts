@@ -127,12 +127,21 @@ export const riyadhHub = {
           label: { en: "Riyadh to AlUla", ar: "الرياض إلى العُلا" },
           meta: { en: "~1,050 km · 10–12 hrs", ar: "~1,050 كم · 10–12 ساعة" },
         },
+        {
+          routeKey: "riyadhToMakkah",
+          label: { en: "Riyadh to Makkah", ar: "الرياض إلى مكة" },
+          meta: { en: "~870 km · 9–10 hrs", ar: "~870 كم · 9–10 ساعات" },
+        },
+        {
+          routeKey: "riyadhToMadinah",
+          label: { en: "Riyadh to Madinah", ar: "الرياض إلى المدينة" },
+          meta: { en: "~850 km · 8–9 hrs", ar: "~850 كم · 8–9 ساعات" },
+        },
       ],
-      // No `planned` list here any more. The four batch-2 routes above are
-      // published, and Riyadh→Makkah and Riyadh→Madinah were withdrawn from
-      // this phase by owner decision — naming them as "being written" was
-      // true when it was written and is not true now. See
-      // docs/riyadh-url-inventory.md.
+      // No `planned` list here: every route named above is published.
+      // Riyadh→Makkah and Riyadh→Madinah were withdrawn from an earlier phase
+      // by owner decision and have since been confirmed and built, so they
+      // now appear as links like the rest. See docs/riyadh-url-inventory.md.
     },
     {
       title: { en: "Airport transfers", ar: "النقل من وإلى المطار" },

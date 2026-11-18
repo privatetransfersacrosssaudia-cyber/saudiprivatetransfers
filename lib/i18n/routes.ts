@@ -22,12 +22,15 @@ export const route = {
   riyadhToTaif: "riyadh-to-taif",
   riyadhToHail: "riyadh-to-hail",
   riyadhToAlUla: "riyadh-to-alula",
+  riyadhToMakkah: "riyadh-to-makkah",
+  riyadhToMadinah: "riyadh-to-madinah",
   riyadhAirport: "riyadh-airport-transfers",
   riyadhRailway: "riyadh-railway-station-transfers",
   riyadhHotel: "riyadh-hotel-transfers",
   jeddah: "jeddah",
   jeddahAirport: "jeddah-airport-transfers",
   jeddahHotel: "jeddah-hotel-transfers",
+  jeddahStation: "jeddah-haramain-station-transfers",
   jeddahToMakkah: "jeddah-to-makkah",
   jeddahToMadinah: "jeddah-to-madinah",
   makkahToMadinah: "makkah-to-madinah",
@@ -75,6 +78,12 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   riyadhToTaif: { priority: 0.7, changeFrequency: "monthly" },
   riyadhToHail: { priority: 0.7, changeFrequency: "monthly" },
   riyadhToAlUla: { priority: 0.7, changeFrequency: "monthly" },
+  // The two pilgrimage corridors out of the capital. Level with batch 1 rather
+  // than batch 2: these are the longest journeys the cluster quotes and the
+  // most searched, and each answers a question no other page on the site does
+  // — whether to drive at all.
+  riyadhToMakkah: { priority: 0.8, changeFrequency: "monthly" },
+  riyadhToMadinah: { priority: 0.8, changeFrequency: "monthly" },
   // Level with the batch-1 routes, not the batch-2 ones: airport transfers
   // are the highest-intent journey in the cluster and the hub's busiest branch.
   riyadhAirport: { priority: 0.8, changeFrequency: "monthly" },
@@ -91,6 +100,11 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // Ranked with its Riyadh counterpart: a hotel page is a smaller intent than
   // an airport page, and ranking it alongside one would misstate that.
   jeddahHotel: { priority: 0.6, changeFrequency: "monthly" },
+  // Ranked with its Riyadh counterpart rather than with the airport page: rail
+  // is one mode among several on these corridors. It sits above the hotel page
+  // because the "wrong station" problem it solves is specific to Jeddah — two
+  // stations about 20 km apart, one of them inside the airport.
+  jeddahStation: { priority: 0.7, changeFrequency: "monthly" },
   // The dominant Jeddah intent, so level with the airport page.
   jeddahToMakkah: { priority: 0.8, changeFrequency: "monthly" },
   // A corridor page, ranked with the other intercity routes.

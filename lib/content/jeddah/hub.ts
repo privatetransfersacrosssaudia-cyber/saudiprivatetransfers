@@ -387,6 +387,14 @@ export const jeddahHub: JeddahHubContent = {
       },
     },
     {
+      routeKey: "jeddahStation",
+      label: { en: "Haramain station transfers", ar: "النقل من محطات الحرمين" },
+      note: {
+        en: "Jeddah has two Haramain stations about 20 km apart, and your ticket names which one. How to read it before you book a car.",
+        ar: "لجدة محطتان لقطار الحرمين يفصل بينهما نحو 20 كم، وتذكرتك تحدد أيّهما. وكيف تقرأها قبل حجز السيارة.",
+      },
+    },
+    {
       routeKey: "riyadhToJeddah",
       label: { en: "Riyadh to Jeddah", ar: "الرياض إلى جدة" },
       note: {

@@ -318,6 +318,50 @@ export type HotelPageContent = {
   cta: ClusterCta;
 };
 
+/**
+ * The places a road's own authority names along it, in order, with no
+ * distances attached. Only the Riyadh–Makkah page carries one.
+ *
+ * Deliberately numberless. The Ministry of Transport's route description for
+ * Highway 40 names the settlements between the two cities, but the page's
+ * segment lengths do not reconcile with each other or with the road's stated
+ * total, so per-town distances would be invented precision. The list on its
+ * own still earns its place: read as a column it is the length of the day,
+ * and that is the thing a reader needs to feel before deciding to drive.
+ */
+export type WayNames = {
+  heading: Bilingual<string>;
+  lead: Bilingual<string>;
+  from: Bilingual<string>;
+  to: Bilingual<string>;
+  places: { name: Bilingual<string> }[];
+  /** Named in the page, because the list is only worth anything attributed. */
+  source: Bilingual<string>;
+  footnote: Bilingual<string>;
+};
+
+/**
+ * A long journey with one substantial city at its middle, drawn as two legs
+ * hinged on that city. Only the Riyadh–Madinah page carries one.
+ *
+ * It exists because this is the single approved route where the midpoint is
+ * not a fuel stop but a place the site already documents in full, which makes
+ * "where does this break?" a question with a real answer.
+ */
+export type Midpoint = {
+  heading: Bilingual<string>;
+  lead: Bilingual<string>;
+  hinge: { name: Bilingual<string>; note: Bilingual<string>; routeKey?: RouteKey };
+  legs: {
+    index: Bilingual<string>;
+    name: Bilingual<string>;
+    distance: Bilingual<string>;
+    duration: Bilingual<string>;
+    detail: Bilingual<string>;
+  }[];
+  footnote: Bilingual<string>;
+};
+
 /** A journey split across days. Only the AlUla page carries one. */
 export type Itinerary = {
   heading: Bilingual<string>;
@@ -368,6 +412,8 @@ export type RoutePageContent = {
   checklist?: Checklist;
   routeChoice?: RouteChoice;
   itinerary?: Itinerary;
+  wayNames?: WayNames;
+  midpoint?: Midpoint;
   faqHeading: Bilingual<string>;
   faqs: ClusterFaq[];
   related: RelatedLink[];

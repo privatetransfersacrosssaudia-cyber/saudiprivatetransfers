@@ -86,12 +86,12 @@ export const abha: AbhaContent = {
 
   seo: {
     title: {
-      en: "Abha and Khamis Mushait Private Transfers | Local Journeys",
-      ar: "توصيل خاص في أبها وخميس مشيط | تنقلات داخل المدينتين",
+      en: "Abha & Khamis Mushait Transfers | Airport and Local",
+      ar: "توصيل خاص في أبها وخميس مشيط | المطار والتنقلات",
     },
     description: {
-      en: "Private local transfers in Abha and in Khamis Mushait with our local drivers. Send the pickup and destination addresses and receive a written quotation.",
-      ar: "توصيل خاص داخل أبها وداخل خميس مشيط مع سائقينا المحليين. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر مكتوب.",
+      en: "Private transfers in Abha and Khamis Mushait with our local drivers, including pickups and drop-offs at Abha International Airport. Send your addresses for a written quotation.",
+      ar: "توصيل خاص في أبها وخميس مشيط مع سائقينا المحليين، ويشمل الاستقبال والتوصيل في مطار أبها الدولي. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر مكتوب.",
     },
   },
 
@@ -181,10 +181,13 @@ export const abha: AbhaContent = {
     offered: [
       { en: "Local transfers within Abha", ar: "التوصيل داخل أبها" },
       { en: "Local transfers within Khamis Mushait", ar: "التوصيل داخل خميس مشيط" },
+      {
+        en: "Pickups and drop-offs at Abha International Airport",
+        ar: "الاستقبال والتوصيل في مطار أبها الدولي",
+      },
     ],
     notOfferedHeading: { en: "Not offered on this page at present", ar: "غير متاح في هذه الصفحة حاليًا" },
     notOffered: [
-      { en: "Pickups and drop-offs at Abha International Airport", ar: "الاستقبال والتوصيل في مطار أبها الدولي" },
       { en: "Hotel transfers", ar: "التوصيل من الفنادق وإليها" },
       { en: "Journeys between Abha and Khamis Mushait", ar: "الرحلات بين أبها وخميس مشيط" },
       { en: "Journeys to Rijal Almaa, Al Soudah or other towns", ar: "الرحلات إلى رجال ألمع أو السودة أو المدن الأخرى" },
@@ -202,8 +205,8 @@ export const abha: AbhaContent = {
       name: { en: "Abha International Airport", ar: "مطار أبها الدولي" },
       distance: { en: "~22 km from Abha", ar: "~22 كم من أبها" },
       detail: {
-        en: "The region's airport, between Abha and Khamis Mushait. Airport pickups and drop-offs are not among the services on this page.",
-        ar: "مطار المنطقة، ويقع بين أبها وخميس مشيط. والاستقبال والتوصيل في المطار ليسا ضمن خدمات هذه الصفحة.",
+        en: "The region's airport, between Abha and Khamis Mushait. We meet arrivals and run departures here: send the flight number and the address in either city, and how and where you meet the driver is confirmed for your journey.",
+        ar: "مطار المنطقة، ويقع بين أبها وخميس مشيط. ونستقبل القادمين وننفّذ رحلات المغادرة منه: أرسل رقم الرحلة والعنوان في أي من المدينتين، ويُؤكَّد لرحلتك كيف وأين تلتقي السائق.",
       },
     },
     rijal: {
@@ -277,8 +280,8 @@ export const abha: AbhaContent = {
     {
       question: { en: "Do you pick up from Abha International Airport?", ar: "هل تستقبلون من مطار أبها الدولي؟" },
       answer: {
-        en: "Airport pickups and drop-offs are not among the services on this page at present. This page covers local transfers within Abha and within Khamis Mushait.",
-        ar: "الاستقبال والتوصيل في المطار ليسا ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل أبها وداخل خميس مشيط.",
+        en: "Yes. Send the flight number and the address you are going to in Abha or Khamis Mushait, and we quote the journey. The pickup is set against your flight rather than a clock time, and sixty minutes of waiting is included. Where you meet the driver is confirmed in writing for your booking.",
+        ar: "نعم. أرسل رقم الرحلة والعنوان الذي تقصده في أبها أو خميس مشيط ونسعّر الرحلة. ويُضبط موعد الاستقبال على رحلتك لا على توقيت الساعة، ومدة الانتظار المشمولة ستون دقيقة. ويُؤكَّد كتابةً لحجزك أين تلتقي السائق.",
       },
     },
     {
@@ -298,8 +301,8 @@ export const abha: AbhaContent = {
     {
       question: { en: "Do you drive from Abha to Jeddah, Riyadh or other cities?", ar: "هل توصلون من أبها إلى جدة أو الرياض أو مدن أخرى؟" },
       answer: {
-        en: "Long-distance journeys from the Asir region are not among the services on this page at present. This page covers local transfers within Abha and within Khamis Mushait.",
-        ar: "الرحلات الطويلة من منطقة عسير ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل أبها وداخل خميس مشيط.",
+        en: "Long-distance journeys from the Asir region are not among the services on this page at present. This page covers local transfers within Abha, within Khamis Mushait, and to and from Abha International Airport.",
+        ar: "الرحلات الطويلة من منطقة عسير ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل أبها وداخل خميس مشيط، ومن مطار أبها الدولي وإليه.",
       },
     },
   ],

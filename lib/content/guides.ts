@@ -23,8 +23,8 @@ export const guides: Guide[] = [
     title: { en: "Reaching AlUla by road", ar: "الوصول إلى العُلا برًّا" },
     kicker: { en: "Day trips", ar: "رحلات يومية" },
     summary: {
-      en: "AlUla sits about three hours north-west of Madinah. What the drive involves and why travellers usually hire a vehicle for the full day rather than a one-way transfer.",
-      ar: "تقع العُلا على نحو ثلاث ساعات شمال غرب المدينة المنورة. ما الذي تتضمنه الرحلة، ولماذا يفضّل المسافرون استئجار سيارة ليوم كامل بدل رحلة باتجاه واحد.",
+      en: "AlUla sits about four to five hours north-west of Madinah, through Khaybar. What the drive involves and why travellers usually hire a vehicle for the full day rather than a one-way transfer.",
+      ar: "تقع العُلا على نحو أربع إلى خمس ساعات شمال غرب المدينة المنورة، مرورًا بخيبر. ما الذي تتضمنه الرحلة، ولماذا يفضّل المسافرون استئجار سيارة ليوم كامل بدل رحلة باتجاه واحد.",
     },
     imageKey: "guide-alula",
     planned: true,

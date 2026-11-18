@@ -82,14 +82,14 @@ export const unaizah: UnaizahContent = {
       ar: "توصيل خاص في عنيزة | داخل المدينة والفنادق وبريدة",
     },
     description: {
-      en: "Private transfers in Unaizah, Al-Qassim: local journeys, hotel pickups and the road to Buraydah, with a guide to Al-Musawkaf, Al-Ghada and Najdi heritage.",
-      ar: "توصيل خاص في عنيزة بالقصيم: التنقل داخل المدينة، والفنادق، والطريق إلى بريدة، مع دليل إلى سوق المسوكف والغضا والتراث النجدي.",
+      en: "Private transfers in Unaizah, Al-Qassim: local journeys, hotel pickups, the airport at Buraydah and the road there, with a guide to Al-Musawkaf and Najdi heritage.",
+      ar: "توصيل خاص في عنيزة بالقصيم: التنقل داخل المدينة، والفنادق، ومطار بريدة والطريق إليها، مع دليل إلى سوق المسوكف والتراث النجدي.",
     },
   },
 
   serviceName: {
-    en: "Private transfers in Unaizah: local journeys, hotels and Buraydah ↔ Unaizah",
-    ar: "التوصيل الخاص في عنيزة: داخل المدينة والفنادق وبين بريدة وعنيزة",
+    en: "Private transfers in Unaizah: local journeys, hotels, Buraydah ↔ Unaizah and the airport",
+    ar: "التوصيل الخاص في عنيزة: داخل المدينة والفنادق وبين بريدة وعنيزة والمطار",
   },
 
   crumbLabel: { en: "Unaizah", ar: "عنيزة" },
@@ -135,10 +135,17 @@ export const unaizah: UnaizahContent = {
         },
         link: { routeKey: "buraydah", label: { en: "Transfers in Buraydah", ar: "التوصيل في بريدة" } },
       },
+      {
+        id: "unaizah-airport",
+        title: { en: "Unaizah ↔ the airport", ar: "عنيزة ↔ المطار" },
+        detail: {
+          en: "Pickups and drop-offs at Prince Naif bin Abdulaziz International Airport in Buraydah, about 43 km away — the nearest airport to Unaizah. Send the flight number and the address here; how and where you meet the driver is confirmed for your journey.",
+          ar: "الاستقبال والتوصيل في مطار الأمير نايف بن عبدالعزيز الدولي ببريدة، على بعد نحو 43 كم — وهو أقرب مطار إلى عنيزة. أرسل رقم الرحلة والعنوان هنا؛ ويُؤكَّد لرحلتك كيف وأين تلتقي السائق.",
+        },
+      },
     ],
     notOfferedHeading: { en: "Not offered on this page at present", ar: "غير متاح في هذه الصفحة حاليًا" },
     notOffered: [
-      { en: "Airport journeys to or from Unaizah", ar: "رحلات المطار من عنيزة أو إليها" },
       { en: "Sightseeing, excursions or hourly hire", ar: "الجولات السياحية والرحلات الاستكشافية والاستئجار بالساعة" },
       { en: "Other intercity routes", ar: "المسارات الأخرى بين المدن" },
     ],
@@ -240,8 +247,8 @@ export const unaizah: UnaizahContent = {
       },
     ],
     note: {
-      en: "Journeys between Unaizah and Buraydah are among our services (see above). Airport journeys to or from Unaizah are not offered on this page at present.",
-      ar: "الرحلات بين عنيزة وبريدة من خدماتنا (انظر أعلاه)، أما رحلات المطار من عنيزة أو إليها فليست متاحة في هذه الصفحة حاليًا.",
+      en: "Journeys between Unaizah and Buraydah are among our services, and so are pickups and drop-offs at the airport there (see above).",
+      ar: "الرحلات بين عنيزة وبريدة من خدماتنا، وكذلك الاستقبال والتوصيل في مطارها (انظر أعلاه).",
     },
   },
 

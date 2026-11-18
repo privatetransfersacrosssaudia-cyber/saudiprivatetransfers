@@ -26,8 +26,8 @@ export const services: Service[] = [
       ar: "استقبال عند الوصول ورحلات المغادرة في مطارات المملكة الرئيسية.",
     },
     detail: {
-      en: "A private vehicle and driver booked for a specific flight, covering Riyadh, Jeddah, Madinah and Dammam airports. Arrival time is matched to the flight you give us so the pickup follows the aircraft, not the clock.",
-      ar: "سيارة خاصة مع سائق محجوزة لرحلة طيران محددة، تشمل مطارات الرياض وجدة والمدينة المنورة والدمام. نربط موعد الاستقبال برقم رحلتك، فيتبع السائق وصول الطائرة لا توقيت الساعة.",
+      en: "A private vehicle and driver booked for a specific flight. Riyadh, Jeddah, Madinah and Dammam each have an airport page of their own, and we also meet flights at the regional airports serving Taif, AlUla, Yanbu, Al Ahsa, Tabuk, Buraydah, Unaizah, Abha, Jazan and Najran — each city's page sets out what is covered there. Arrival time is matched to the flight you give us, so the pickup follows the aircraft rather than the clock.",
+      ar: "سيارة خاصة مع سائق محجوزة لرحلة طيران محددة. ولكلٍّ من الرياض وجدة والمدينة المنورة والدمام صفحة مطار خاصة بها، كما نستقبل الرحلات في المطارات الإقليمية التي تخدم الطائف والعُلا وينبع والأحساء وتبوك وبريدة وعنيزة وأبها وجازان ونجران — وتوضّح صفحة كل مدينة ما تشمله الخدمة هناك. ونربط موعد الاستقبال برقم رحلتك، فيتبع السائق وصول الطائرة لا توقيت الساعة.",
     },
     imageKey: "svc-airport",
     featured: true,

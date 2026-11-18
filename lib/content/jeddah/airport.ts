@@ -492,6 +492,18 @@ export const jeddahAirport: JeddahAirportContent = {
 
   related: [
     {
+      // The airport holds one of the two Jeddah Haramain stations, so a reader
+      // here is the likeliest person to need that page — and the likeliest to
+      // carry the flight-number model across to a job that has no flight in
+      // it. The note says so rather than leaving the two to blur.
+      routeKey: "jeddahStation",
+      label: { en: "Haramain station transfers", ar: "النقل من محطات الحرمين" },
+      note: {
+        en: "One of Jeddah's two Haramain stations is inside this airport — but meeting a train there is a different job from meeting a flight.",
+        ar: "إحدى محطتي قطار الحرمين في جدة داخل هذا المطار — لكن استقبال قطار هناك مهمة تختلف عن استقبال رحلة جوية.",
+      },
+    },
+    {
       routeKey: "jeddahToMakkah",
       label: { en: "Jeddah to Makkah", ar: "من جدة إلى مكة" },
       note: {

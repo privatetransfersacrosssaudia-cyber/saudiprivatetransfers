@@ -219,10 +219,10 @@ export const madinah: MadinahContent = {
       },
       {
         to: { en: "AlUla", ar: "العلا" },
-        distance: { en: "~300 km", ar: "~300 كم" },
+        distance: { en: "~383 km", ar: "~383 كم" },
         note: {
-          en: "North-west to the heritage oasis — around three hours by Visit Saudi's estimate.",
-          ar: "شمال غرب المدينة إلى الواحة التراثية، في نحو ثلاث ساعات وفق تقدير روح السعودية.",
+          en: "North-west to the heritage oasis through Khaybar — four to five hours by the Saudi Press Agency's August 2026 figure.",
+          ar: "شمال غرب المدينة إلى الواحة التراثية مرورًا بخيبر — من أربع إلى خمس ساعات وفق رقم وكالة الأنباء السعودية في أغسطس 2026.",
         },
         link: { routeKey: "alula", label: { en: "AlUla transfers", ar: "التوصيل في العلا" } },
       },
@@ -316,6 +316,14 @@ export const madinah: MadinahContent = {
   ],
 
   related: [
+    {
+      routeKey: "riyadhToMadinah",
+      label: { en: "Riyadh to Madinah", ar: "الرياض إلى المدينة" },
+      note: {
+        en: "The road from the capital through Qassim: about 850 km in two legs, and why the railway only covers the first.",
+        ar: "الطريق من العاصمة عبر القصيم: نحو 850 كم في مرحلتين، ولماذا لا تغطي السكة إلا أولاهما.",
+      },
+    },
     {
       routeKey: "madinahAirport",
       label: { en: "Madinah airport transfers", ar: "النقل من مطار المدينة" },

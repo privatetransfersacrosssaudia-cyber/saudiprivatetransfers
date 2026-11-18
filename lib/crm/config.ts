@@ -1,5 +1,7 @@
 import "server-only";
 
+import { site } from "@/lib/site";
+
 /**
  * Every piece of CRM configuration, read in one place.
  *
@@ -66,8 +68,26 @@ export function emailConfig() {
   const notify = notifyRaw
     ? notifyRaw.split(",").map((address) => address.trim()).filter(Boolean)
     : [];
-  /** Optional Reply-To, so customer replies reach a human mailbox. */
-  const replyTo = trimmed("CRM_EMAIL_REPLY_TO");
+  /**
+   * Where customer replies go.
+   *
+   * `CRM_EMAIL_FROM` is a sending address on the verified domain, and a
+   * verified sending domain is not the same thing as a mailbox somebody
+   * reads — replies to `bookings@` go nowhere unless that mailbox exists.
+   * Several customer-facing templates invite a reply, and the enquiry
+   * acknowledgement asks for one in as many words, so an absent Reply-To
+   * loses real messages silently: the customer sees their reply send, and
+   * nobody ever receives it.
+   *
+   * It therefore falls back to the address the site already publishes as its
+   * contact, rather than to nothing. `CRM_EMAIL_REPLY_TO` still overrides it,
+   * which is what to set once a monitored mailbox exists on the domain.
+   *
+   * Team notifications are unaffected. Those pass their own Reply-To — the
+   * customer's address — at the call site, and an explicit one wins in
+   * `send()`.
+   */
+  const replyTo = trimmed("CRM_EMAIL_REPLY_TO") ?? site.contact.email ?? undefined;
 
   return {
     apiKey,
@@ -111,6 +131,14 @@ export function readiness(): ReadinessItem[] {
       ok: email.configured,
       vars: ["RESEND_API_KEY", "CRM_EMAIL_FROM"],
       note: "The sender's domain must be verified with the provider first.",
+    },
+    {
+      label: "Customer replies",
+      ok: Boolean(email.replyTo),
+      vars: ["CRM_EMAIL_REPLY_TO"],
+      note: email.replyTo
+        ? `Replies to customer emails go to ${email.replyTo}, not to the sending address.`
+        : "Nowhere to reply to: the sending address has no mailbox behind it.",
     },
     {
       label: "Enquiry notifications",

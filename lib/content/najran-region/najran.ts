@@ -62,12 +62,12 @@ export const najran: NajranContent = {
 
   seo: {
     title: {
-      en: "Najran Private Transfers | Local Journeys in the City",
-      ar: "توصيل خاص في نجران | تنقلات داخل المدينة",
+      en: "Najran Private Transfers | Airport and City Journeys",
+      ar: "توصيل خاص في نجران | المطار والتنقل داخل المدينة",
     },
     description: {
-      en: "Private local transfers within Najran city with our local drivers, on both sides of the Najran Valley. Send your addresses for a written quotation.",
-      ar: "توصيل خاص داخل مدينة نجران مع سائقينا المحليين، على ضفتي وادي نجران. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر مكتوب.",
+      en: "Private transfers within Najran city with our local drivers, on both sides of the Najran Valley, including pickups and drop-offs at Najran's airport. Send your addresses for a written quotation.",
+      ar: "توصيل خاص داخل مدينة نجران مع سائقينا المحليين، على ضفتي وادي نجران، ويشمل الاستقبال والتوصيل في مطار نجران. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر مكتوب.",
     },
   },
 
@@ -141,10 +141,12 @@ export const najran: NajranContent = {
 
   scope: {
     heading: { en: "What we offer here", ar: "ما نقدّمه هنا" },
-    offered: [{ en: "Local transfers within Najran city", ar: "التوصيل داخل مدينة نجران" }],
+    offered: [
+      { en: "Local transfers within Najran city", ar: "التوصيل داخل مدينة نجران" },
+      { en: "Pickups and drop-offs at Najran's airport", ar: "الاستقبال والتوصيل في مطار نجران" },
+    ],
     notOfferedHeading: { en: "Not offered on this page at present", ar: "غير متاح في هذه الصفحة حاليًا" },
     notOffered: [
-      { en: "Pickups and drop-offs at Najran's airport", ar: "الاستقبال والتوصيل في مطار نجران" },
       { en: "Hotel transfers", ar: "التوصيل من الفنادق وإليها" },
       { en: "Journeys to Al-Ukhdood, Hima, Sharurah or other towns", ar: "الرحلات إلى الأخدود أو حمى أو شرورة أو المدن الأخرى" },
       { en: "Journeys between Najran and Abha, Jazan, Riyadh or other cities", ar: "الرحلات بين نجران وأبها أو جازان أو الرياض أو المدن الأخرى" },
@@ -228,8 +230,8 @@ export const najran: NajranContent = {
     {
       question: { en: "Do you pick up from Najran's airport?", ar: "هل تستقبلون من مطار نجران؟" },
       answer: {
-        en: "Airport pickups and drop-offs are not among the services on this page at present. This page covers local transfers within Najran city.",
-        ar: "الاستقبال والتوصيل في المطار ليسا ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل مدينة نجران.",
+        en: "Yes. Send the flight number and the address you are going to in Najran city, and we quote the journey. The pickup is set against your flight rather than a clock time, and sixty minutes of waiting is included. Where you meet the driver is confirmed in writing for your booking.",
+        ar: "نعم. أرسل رقم الرحلة والعنوان الذي تقصده في مدينة نجران ونسعّر الرحلة. ويُضبط موعد الاستقبال على رحلتك لا على توقيت الساعة، ومدة الانتظار المشمولة ستون دقيقة. ويُؤكَّد كتابةً لحجزك أين تلتقي السائق.",
       },
     },
     {
@@ -242,8 +244,8 @@ export const najran: NajranContent = {
     {
       question: { en: "Do you drive from Najran to Abha, Jazan or Riyadh?", ar: "هل توصلون من نجران إلى أبها أو جازان أو الرياض؟" },
       answer: {
-        en: "Long-distance journeys from Najran are not among the services on this page at present. This page covers local transfers within Najran city.",
-        ar: "الرحلات الطويلة من نجران ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل مدينة نجران.",
+        en: "Long-distance journeys from Najran are not among the services on this page at present. This page covers local transfers within Najran city, and journeys to and from Najran's airport.",
+        ar: "الرحلات الطويلة من نجران ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل داخل مدينة نجران، والرحلات من مطار نجران وإليه.",
       },
     },
     {

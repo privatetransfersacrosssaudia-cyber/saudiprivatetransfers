@@ -15,8 +15,18 @@ import type { ClusterCta, ClusterFaq, RelatedLink } from "@/lib/content/riyadh/t
  * **governorate**, the **town** and the **individual sites**.
  *
  * Facts (local research folder, madinah-region/02):
- * - ~300 km from Madinah (Saudipedia); "a 3-hour drive from Medina" (Visit
- *   Saudi). AlUla lies north-west of Madinah.
+ * - The Madinah road leg is ~383 km and four to five hours, through Khaybar.
+ *   Source: the Saudi Press Agency, 14 August 2026, as reported by Arab News.
+ *   AlUla lies north-west of Madinah.
+ *
+ *   This replaced an earlier "~300 km (Saudipedia) / 3-hour drive (Visit
+ *   Saudi)" pair. The two are not interchangeable: the 300 km figure appears
+ *   to describe the separation between the two places rather than the road
+ *   route, and nothing found in a later check supported a three-hour drive.
+ *   Published road figures for this leg range from about 290 km to 383 km
+ *   because they measure between different points, so the page gives the
+ *   SPA figure, names it, and says the range exists rather than implying a
+ *   single settled number. Do not quietly narrow it back.
  * - AlUla International Airport: domestic 2011, international 2021 —
  *   Saudipedia; regular routes from Riyadh, Jeddah and Dubai — Visit Saudi
  *   (time-sensitive).
@@ -83,8 +93,8 @@ export const alula: AlUlaContent = {
       ar: "التوصيل الخاص في العلا",
     },
     lead: {
-      en: "AlUla is an oasis valley in the north-west, about 300 km from Madinah, known in antiquity as Dadan. The Old Town is at its centre, and Hegra, among the first Saudi sites on the UNESCO World Heritage List (2008), is nearby. We meet flights at AlUla airport, move you between the town and the sites, and drive the road from Madinah.",
-      ar: "العلا وادٍ وواحة في شمال غرب المملكة على بعد نحو 300 كم من المدينة المنورة، وعُرفت قديمًا باسم دادان. تتوسطها البلدة القديمة، وبالقرب منها الحِجر، من أوائل المواقع السعودية في قائمة التراث العالمي لليونسكو (2008). نستقبلك في مطار العلا، وننقلك بين البلدة والمواقع، ونقطع الطريق من المدينة المنورة.",
+      en: "AlUla is an oasis valley in the north-west, about 383 km by road from Madinah, known in antiquity as Dadan. The Old Town is at its centre, and Hegra, among the first Saudi sites on the UNESCO World Heritage List (2008), is nearby. We meet flights at AlUla airport, move you between the town and the sites, and drive the road from Madinah.",
+      ar: "العلا وادٍ وواحة في شمال غرب المملكة على بعد نحو 383 كم برًّا من المدينة المنورة، وعُرفت قديمًا باسم دادان. تتوسطها البلدة القديمة، وبالقرب منها الحِجر، من أوائل المواقع السعودية في قائمة التراث العالمي لليونسكو (2008). نستقبلك في مطار العلا، وننقلك بين البلدة والمواقع، ونقطع الطريق من المدينة المنورة.",
     },
   },
 
@@ -144,14 +154,14 @@ export const alula: AlUlaContent = {
   madinah: {
     heading: { en: "From Madinah to AlUla", ar: "من المدينة المنورة إلى العلا" },
     facts: [
-      { label: { en: "Distance", ar: "المسافة" }, value: { en: "~300 km", ar: "~300 كم" } },
-      { label: { en: "By road", ar: "برًّا" }, value: { en: "~3 hours", ar: "~3 ساعات" } },
+      { label: { en: "Distance", ar: "المسافة" }, value: { en: "~383 km", ar: "~383 كم" } },
+      { label: { en: "By road", ar: "برًّا" }, value: { en: "4–5 hours", ar: "4–5 ساعات" } },
       { label: { en: "Direction", ar: "الاتجاه" }, value: { en: "North-west", ar: "شمال غرب" } },
     ],
     paragraphs: [
       {
-        en: "About 300 km north-west of Madinah; Visit Saudi gives the drive as around three hours. Your actual pickup and the hotel or resort at the AlUla end decide the time.",
-        ar: "نحو 300 كم شمال غرب المدينة المنورة، وتذكر روح السعودية أن القيادة تستغرق نحو ثلاث ساعات، ونقطة انطلاقك والفندق أو المنتجع في العلا هما ما يحدد الوقت الفعلي.",
+        en: "About 383 km north-west of Madinah, through Khaybar. The Saudi Press Agency put the drive at four to five hours in August 2026, as reported by Arab News. Published figures for this road vary — some give as little as 290 km — because they measure between different points, so the distance and the time both depend on your pickup, the route taken and conditions on the day.",
+        ar: "نحو 383 كم شمال غرب المدينة المنورة، مرورًا بخيبر. وقدّرت وكالة الأنباء السعودية زمن القيادة بأربع إلى خمس ساعات في أغسطس 2026، وفق ما نقلته «عرب نيوز». وتتباين الأرقام المنشورة لهذا الطريق — إذ يذكر بعضها 290 كم فقط — لأنها تقيس بين نقاط مختلفة، فالمسافة والزمن كلاهما يعتمد على نقطة انطلاقك والمسار المسلوك وظروف اليوم.",
       },
       {
         en: "It is a long single leg through open country, so tell us if you want stops, and give us the return date if you are coming back by road.",
@@ -192,8 +202,8 @@ export const alula: AlUlaContent = {
     {
       question: { en: "How far is AlUla from Madinah?", ar: "من المدينة إلى العلا كم ساعة؟" },
       answer: {
-        en: "About 300 km north-west; Visit Saudi gives the drive as around three hours. The actual time depends on your pickup and where you are staying in AlUla.",
-        ar: "نحو 300 كم شمال غرب المدينة، وتذكر روح السعودية أن القيادة تستغرق نحو ثلاث ساعات، ويعتمد الوقت الفعلي على نقطة انطلاقك ومكان إقامتك في العلا.",
+        en: "About 383 km north-west, through Khaybar. The Saudi Press Agency put the drive at four to five hours in August 2026, as reported by Arab News. Published figures for this road vary, so the actual distance and time depend on your pickup, where you are staying in AlUla, the route taken and conditions on the day.",
+        ar: "نحو 383 كم شمال غرب المدينة، مرورًا بخيبر. وقدّرت وكالة الأنباء السعودية زمن القيادة بأربع إلى خمس ساعات في أغسطس 2026، وفق ما نقلته «عرب نيوز». وتتباين الأرقام المنشورة لهذا الطريق، فالمسافة والزمن الفعليان يعتمدان على نقطة انطلاقك ومكان إقامتك في العلا والمسار المسلوك وظروف اليوم.",
       },
     },
     {

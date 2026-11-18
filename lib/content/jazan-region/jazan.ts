@@ -76,12 +76,12 @@ export const jazan: JazanContent = {
 
   seo: {
     title: {
-      en: "Jazan, Sabya & Abu Arish Private Transfers | Local Journeys",
-      ar: "توصيل خاص في جازان وصبيا وأبو عريش | تنقلات محلية",
+      en: "Jazan, Sabya & Abu Arish Transfers | Airport and Local",
+      ar: "توصيل خاص في جازان وصبيا وأبو عريش | المطار والتنقلات",
     },
     description: {
-      en: "Private local transfers in Jazan city, Sabya and Abu Arish with our local drivers. Send the pickup and destination addresses for a written quotation.",
-      ar: "توصيل خاص محلي في مدينة جازان وصبيا وأبو عريش مع سائقينا المحليين. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر مكتوب.",
+      en: "Private transfers in Jazan city, Sabya and Abu Arish with our local drivers, including pickups and drop-offs at Jazan's King Abdullah bin Abdulaziz International Airport. Send your addresses for a quotation.",
+      ar: "توصيل خاص في مدينة جازان وصبيا وأبو عريش مع سائقينا المحليين، ويشمل الاستقبال والتوصيل في مطار الملك عبدالله بن عبدالعزيز الدولي بجازان. أرسل عنوان الانطلاق والوجهة واحصل على عرض سعر.",
     },
   },
 
@@ -151,10 +151,13 @@ export const jazan: JazanContent = {
       { en: "Local transfers in Jazan city", ar: "التوصيل داخل مدينة جازان" },
       { en: "Local transfers in Sabya", ar: "التوصيل في صبيا" },
       { en: "Local transfers in Abu Arish", ar: "التوصيل في أبو عريش" },
+      {
+        en: "Pickups and drop-offs at King Abdullah bin Abdulaziz International Airport",
+        ar: "الاستقبال والتوصيل في مطار الملك عبدالله بن عبدالعزيز الدولي",
+      },
     ],
     notOfferedHeading: { en: "Not offered on this page at present", ar: "غير متاح في هذه الصفحة حاليًا" },
     notOffered: [
-      { en: "Pickups and drop-offs at Jazan's airport", ar: "الاستقبال والتوصيل في مطار جازان" },
       { en: "Hotel transfers", ar: "التوصيل من الفنادق وإليها" },
       { en: "Journeys between Jazan city, Sabya and Abu Arish", ar: "الرحلات بين مدينة جازان وصبيا وأبو عريش" },
       { en: "The Farasan ferry, Fayfa or other towns in the province", ar: "عبّارة فرسان أو فيفاء أو المدن الأخرى في المنطقة" },
@@ -182,8 +185,8 @@ export const jazan: JazanContent = {
           ar: "مطار جازان (GIZ)، على أطراف المدينة.",
         },
         note: {
-          en: "Airport pickups and drop-offs are not among the services on this page.",
-          ar: "الاستقبال والتوصيل في المطار ليسا ضمن خدمات هذه الصفحة.",
+          en: "We meet arrivals and run departures here. Send the flight number and the address in Jazan city; how and where you meet the driver is confirmed for your journey.",
+          ar: "ونستقبل القادمين وننفّذ رحلات المغادرة منه. أرسل رقم الرحلة والعنوان في مدينة جازان؛ ويُؤكَّد لرحلتك كيف وأين تلتقي السائق.",
         },
       },
       {
@@ -246,8 +249,8 @@ export const jazan: JazanContent = {
     {
       question: { en: "Do you pick up from Jazan's airport?", ar: "هل تستقبلون من مطار جازان؟" },
       answer: {
-        en: "Airport pickups and drop-offs are not among the services on this page at present. This page covers local transfers in Jazan city, Sabya and Abu Arish.",
-        ar: "الاستقبال والتوصيل في المطار ليسا ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل في مدينة جازان وصبيا وأبو عريش.",
+        en: "Yes. Send the flight number and the address you are going to in Jazan city, and we quote the journey. The pickup is set against your flight rather than a clock time, and sixty minutes of waiting is included. Where you meet the driver is confirmed in writing for your booking. Runs between the airport and Sabya or Abu Arish are a separate question — ask and we will tell you.",
+        ar: "نعم. أرسل رقم الرحلة والعنوان الذي تقصده في مدينة جازان ونسعّر الرحلة. ويُضبط موعد الاستقبال على رحلتك لا على توقيت الساعة، ومدة الانتظار المشمولة ستون دقيقة. ويُؤكَّد كتابةً لحجزك أين تلتقي السائق. أما الرحلات بين المطار وصبيا أو أبو عريش فمسألة منفصلة — اسأل ونخبرك.",
       },
     },
     {
@@ -260,8 +263,8 @@ export const jazan: JazanContent = {
     {
       question: { en: "Do you drive from Jazan to Abha, Najran or Riyadh?", ar: "هل توصلون من جازان إلى أبها أو نجران أو الرياض؟" },
       answer: {
-        en: "Long-distance journeys from the Jazan region are not among the services on this page at present. This page covers local transfers in Jazan city, Sabya and Abu Arish.",
-        ar: "الرحلات الطويلة من منطقة جازان ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل في مدينة جازان وصبيا وأبو عريش.",
+        en: "Long-distance journeys from the Jazan region are not among the services on this page at present. This page covers local transfers in Jazan city, Sabya and Abu Arish, and journeys to and from Jazan's airport.",
+        ar: "الرحلات الطويلة من منطقة جازان ليست ضمن خدمات هذه الصفحة حاليًا، فهي تغطي التوصيل في مدينة جازان وصبيا وأبو عريش، والرحلات من مطار جازان وإليه.",
       },
     },
     {
