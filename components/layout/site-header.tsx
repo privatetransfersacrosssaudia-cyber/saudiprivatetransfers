@@ -6,7 +6,6 @@ import { ArrowRightIcon } from "lucide-react";
 
 import { cn } from "cn";
 import { DesktopNav } from "@/components/layout/desktop-nav";
-import { LanguageSwitcher } from "@/components/layout/language-switcher";
 import { MobileNav } from "@/components/layout/mobile-nav";
 import { SiteLogo } from "@/components/layout/site-logo";
 import { quoteCta } from "@/lib/content/navigation";
@@ -78,15 +77,15 @@ export function SiteHeader({ locale }: { locale: Locale }) {
             header's — white over the hero, ink once it is solid. */}
         <DesktopNav locale={locale} />
 
+        {/*
+          No language switcher here any more: it lives in the contact bar
+          above, which is where a utility of that kind belongs and which
+          leaves this row to the logo, the navigation and the one call to
+          action. `MobileNav` still carries its own for small screens, which
+          is unchanged — the copy removed from here was already hidden below
+          `sm`.
+        */}
         <div className="flex items-center gap-2">
-          <LanguageSwitcher
-            locale={locale}
-            className={cn(
-              "hidden sm:inline-flex",
-              overHero && "border-white/30 text-white hover:bg-white/10"
-            )}
-          />
-
           <Link
             href={cta.href}
             className={cn(
