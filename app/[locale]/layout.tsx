@@ -9,6 +9,7 @@ import {
 
 import { FirstTouchRecorder } from "@/components/attribution/first-touch";
 import { FloatingActions } from "@/components/layout/floating-actions";
+import { ContactBar } from "@/components/layout/contact-bar";
 import { SiteFooter } from "@/components/layout/site-footer";
 import { SiteHeader } from "@/components/layout/site-header";
 import { ui } from "@/lib/i18n/dictionary";
@@ -129,6 +130,7 @@ export default async function LocaleLayout({
         >
           {ui.skipToContent[active]}
         </a>
+        <ContactBar locale={active} />
         <SiteHeader locale={active} />
         <main id="main" className="flex-1">
           {children}

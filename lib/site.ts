@@ -36,7 +36,22 @@ export const site = {
    * no spaces — that is the form wa.me expects in its path.
    */
   contact: {
-    email: "privatetransfersacrosssaudia@gmail.com" as string | null,
+    /**
+     * The general address. Published wherever the site shows a single address
+     * — the footer, the contact page, and the privacy and terms pages, where
+     * a data or policy enquiry is not a booking.
+     */
+    email: "info@privatetransfersacrosssaudia.com" as string | null,
+    /**
+     * Bookings and quotations.
+     *
+     * This is the address transactional email should come *from* and reply
+     * *to*, so a customer answering a quotation reaches the desk that sent
+     * it rather than a general inbox. `emailConfig()` in lib/crm/config.ts
+     * uses it as the Reply-To fallback; the From itself is set by
+     * `CRM_EMAIL_FROM` in the environment and must match this address.
+     */
+    bookingEmail: "booking@privatetransfersacrosssaudia.com" as string | null,
     phone: "+923148932631" as string | null,
     whatsapp: "923148932631" as string | null,
   },

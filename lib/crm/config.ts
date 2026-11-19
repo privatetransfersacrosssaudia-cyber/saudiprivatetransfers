@@ -79,15 +79,28 @@ export function emailConfig() {
    * loses real messages silently: the customer sees their reply send, and
    * nobody ever receives it.
    *
-   * It therefore falls back to the address the site already publishes as its
-   * contact, rather than to nothing. `CRM_EMAIL_REPLY_TO` still overrides it,
-   * which is what to set once a monitored mailbox exists on the domain.
+   * It therefore falls back to the published bookings address rather than to
+   * nothing, and to the general address only if no bookings one is set. The
+   * bookings desk is the right destination: someone replying to a quotation
+   * or a booking confirmation is answering that desk, not asking a general
+   * question, and routing them to a general inbox loses the thread.
+   *
+   * `CRM_EMAIL_REPLY_TO` still overrides both, which is what to set if
+   * replies should ever go somewhere other than the published address.
+   *
+   * This should match `CRM_EMAIL_FROM` in the environment. The From is set
+   * there rather than here because it has to be a sender the email provider
+   * has verified, which is a deployment fact rather than a content one.
    *
    * Team notifications are unaffected. Those pass their own Reply-To — the
    * customer's address — at the call site, and an explicit one wins in
    * `send()`.
    */
-  const replyTo = trimmed("CRM_EMAIL_REPLY_TO") ?? site.contact.email ?? undefined;
+  const replyTo =
+    trimmed("CRM_EMAIL_REPLY_TO") ??
+    site.contact.bookingEmail ??
+    site.contact.email ??
+    undefined;
 
   return {
     apiKey,

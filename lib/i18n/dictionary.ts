@@ -90,6 +90,15 @@ export const ui = {
     en: "Email",
     ar: "البريد الإلكتروني",
   },
+  /** Contact bar, above the header. */
+  contactBarGeneral: {
+    en: "Enquiries",
+    ar: "للاستفسارات",
+  },
+  contactBarBookings: {
+    en: "Bookings",
+    ar: "للحجوزات",
+  },
   footerWhatsappLabel: {
     en: "WhatsApp",
     ar: "واتساب",
