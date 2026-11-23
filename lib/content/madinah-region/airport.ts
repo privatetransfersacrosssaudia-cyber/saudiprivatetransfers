@@ -497,6 +497,14 @@ export const madinahAirport = {
   relatedHeading: { en: "Related journeys", ar: "رحلات ذات صلة" },
   related: [
     {
+      routeKey: "airportTransfers",
+      label: { en: "Airport transfers across Saudi Arabia", ar: "النقل من المطارات في السعودية" },
+      note: {
+        en: "The service page above this one: how arrivals and departures differ, what your flight number does, and a local-time converter for long-haul arrivals.",
+        ar: "الصفحة الأعم فوق هذه: كيف يختلف الوصول عن المغادرة، وما الذي يفعله رقم رحلتك، ومحوّل توقيت محلي للقادمين من رحلات طويلة.",
+      },
+    },
+    {
       routeKey: "madinah" as RouteKey,
       label: { en: "All Madinah transfers", ar: "جميع خدمات النقل في المدينة" },
       note: {

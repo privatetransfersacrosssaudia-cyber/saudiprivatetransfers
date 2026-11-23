@@ -35,6 +35,9 @@ export const route = {
   jeddahToMadinah: "jeddah-to-madinah",
   makkahToMadinah: "makkah-to-madinah",
   umrahTransfers: "umrah-transfers",
+  airportTransfers: "airport-transfers",
+  cityToCity: "city-to-city-transfers",
+  hotelTransfers: "hotel-transfers",
   madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
@@ -118,6 +121,20 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // with the city hubs rather than with a single route page: it is the parent
   // of several of them, and it is the highest commercial intent on the site.
   umrahTransfers: { priority: 0.9, changeFrequency: "monthly" },
+  // The service page above the four airport pages. Level with them rather
+  // than above: it is the entry point for the highest-intent journey on the
+  // site, but the airport pages carry the terminal detail and should keep
+  // their own standing for a city-specific search.
+  airportTransfers: { priority: 0.9, changeFrequency: "monthly" },
+  // The service page above the twelve intercity route pages. Level with the
+  // other service pages; the route pages keep their own standing, since a
+  // search for one corridor should land on that corridor.
+  cityToCity: { priority: 0.9, changeFrequency: "monthly" },
+  // The service page above the Riyadh and Jeddah hotel pages. A step below
+  // the other service pages: a hotel transfer is usually a leg of something
+  // larger rather than the journey someone sets out to buy, which is the
+  // same reason the two city hotel pages sit at 0.6.
+  hotelTransfers: { priority: 0.8, changeFrequency: "monthly" },
   // An airport service page, ranked with the other two rather than with the
   // destination hubs it sits under.
   madinahAirport: { priority: 0.8, changeFrequency: "monthly" },

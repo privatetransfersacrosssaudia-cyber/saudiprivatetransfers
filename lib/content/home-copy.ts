@@ -128,6 +128,8 @@ export const homeCopy = {
       ar: "كل رحلة خاصة: سيارة واحدة وسائق واحد، محجوزان لمجموعتك وحدها. اختر الخدمة الأقرب لخطتك ونُفصّل التفاصيل حولها.",
     } satisfies B,
     cardCta: { en: "Get a quote", ar: "اطلب عرض سعر" } satisfies B,
+    /** Used instead of `cardCta` when the service has a page of its own. */
+    cardCtaPage: { en: "See how it works", ar: "كيف تعمل الخدمة" } satisfies B,
     cardCtaFor: { en: "for", ar: "لخدمة" } satisfies B,
   },
 

@@ -1,9 +1,15 @@
 import type { Bilingual } from "@/lib/i18n/config";
+import type { RouteKey } from "@/lib/i18n/routes";
 import type { SiteImageKey } from "@/lib/site-images";
 
 /**
- * The eight transfer services. Each one gets its own page later, which is why
- * the slug and the summary live here rather than inside a component.
+ * The eight transfer services.
+ *
+ * `routeKey` is set only where a service genuinely has its own page. Where it
+ * is absent the home card still links to the quote form, so no card is ever a
+ * dead end — the original reason every card pointed there. As service pages
+ * are built, setting the key here is the whole change: the card picks up the
+ * link and its label without touching the component.
  */
 export type Service = {
   slug: string;
@@ -13,6 +19,8 @@ export type Service = {
   /** Plain-language answer to "what is this", used for AI and search snippets. */
   detail: Bilingual<string>;
   imageKey: SiteImageKey;
+  /** The service’s own page, where one exists. Omitted otherwise. */
+  routeKey?: RouteKey;
   /** Drives the editorial grid: featured cards span two columns. */
   featured?: boolean;
 };
@@ -20,6 +28,7 @@ export type Service = {
 export const services: Service[] = [
   {
     slug: "airport-transfers",
+    routeKey: "airportTransfers",
     name: { en: "Airport Transfers", ar: "النقل من وإلى المطار" },
     summary: {
       en: "Meet-on-arrival pickups and departure runs at Saudi Arabia's main airports.",
@@ -34,6 +43,7 @@ export const services: Service[] = [
   },
   {
     slug: "city-to-city-transfers",
+    routeKey: "cityToCity",
     name: { en: "City-to-City Transfers", ar: "النقل بين المدن" },
     summary: {
       en: "Long-distance road journeys between Saudi cities in a private vehicle.",
@@ -48,6 +58,7 @@ export const services: Service[] = [
   },
   {
     slug: "hotel-transfers",
+    routeKey: "hotelTransfers",
     name: { en: "Hotel Transfers", ar: "النقل من وإلى الفنادق" },
     summary: {
       en: "Door-to-door journeys between hotels, residences and terminals.",
@@ -74,6 +85,7 @@ export const services: Service[] = [
   },
   {
     slug: "umrah-transfers",
+    routeKey: "umrahTransfers",
     name: { en: "Umrah Transfers", ar: "نقل المعتمرين" },
     summary: {
       en: "Airport, hotel and intercity journeys for Umrah travellers.",

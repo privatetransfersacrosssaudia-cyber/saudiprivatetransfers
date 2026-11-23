@@ -5,7 +5,7 @@ import { ArrowUpRightIcon } from "lucide-react";
 import { SectionHeading } from "@/components/home/section-heading";
 import { homeCopy } from "@/lib/content/home-copy";
 import { services } from "@/lib/content/services";
-import { href } from "@/lib/i18n/routes";
+import { href, type RouteKey } from "@/lib/i18n/routes";
 import { altText } from "@/lib/images";
 import { image } from "@/lib/site-images";
 import { cn } from "cn";
@@ -63,7 +63,11 @@ export function ServicesSection({ locale }: { locale: Locale }) {
                   <p className="text-body mt-3 flex-1 text-muted-foreground">
                     {service.detail[locale]}
                   </p>
-                  <ServiceLink locale={locale} service={service.name[locale]} />
+                  <ServiceLink
+                    locale={locale}
+                    service={service.name[locale]}
+                    routeKey={service.routeKey}
+                  />
                 </div>
               </article>
             );
@@ -99,6 +103,7 @@ export function ServicesSection({ locale }: { locale: Locale }) {
                   <ServiceLink
                     locale={locale}
                     service={service.name[locale]}
+                    routeKey={service.routeKey}
                     compact
                   />
                 </div>
@@ -112,31 +117,38 @@ export function ServicesSection({ locale }: { locale: Locale }) {
 }
 
 /**
- * Every card's action goes to the quote page rather than a service page that
- * does not exist yet, so no link on the page is a dead end. The service name
- * is appended for screen readers, since six identical "Get a quote" links
- * would otherwise be indistinguishable out of context.
+ * A card points at the service's own page where one exists, and at the quote
+ * form where it does not — so no card is ever a dead end, which was the
+ * original reason they all went to the form. The label changes with the
+ * destination: sending someone to a page under a "Get a quote" link would
+ * mis-set their expectation.
+ *
+ * The service name is appended for screen readers either way, since several
+ * identical links would otherwise be indistinguishable out of context.
  */
 function ServiceLink({
   locale,
   service,
+  routeKey,
   compact,
 }: {
   locale: Locale;
   service: string;
+  routeKey?: RouteKey;
   compact?: boolean;
 }) {
   const copy = homeCopy.services;
+  const label = routeKey ? copy.cardCtaPage : copy.cardCta;
 
   return (
     <Link
-      href={href(locale, "getQuote")}
+      href={href(locale, routeKey ?? "getQuote")}
       className={cn(
         "mt-4 inline-flex items-center gap-1.5 font-semibold text-palm transition-colors hover:text-palm-deep",
         compact ? "text-sm" : "text-[0.95rem]"
       )}
     >
-      {copy.cardCta[locale]}
+      {label[locale]}
       <span className="sr-only">
         {" "}
         {copy.cardCtaFor[locale]} {service}
