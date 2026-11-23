@@ -492,6 +492,14 @@ export const jeddahAirport: JeddahAirportContent = {
 
   related: [
     {
+      routeKey: "umrahTransfers",
+      label: { en: "Umrah transfers", ar: "نقل العمرة" },
+      note: {
+        en: "The whole trip as one arrangement: the airport arrival, the hotel runs, the road between the holy cities and the departure leg.",
+        ar: "الرحلة كلها ترتيبًا واحدًا: الوصول من المطار، والتنقل بين الفنادق، والطريق بين المدينتين المقدستين، ورحلة المغادرة.",
+      },
+    },
+    {
       // The airport holds one of the two Jeddah Haramain stations, so a reader
       // here is the likeliest person to need that page — and the likeliest to
       // carry the flight-number model across to a job that has no flight in

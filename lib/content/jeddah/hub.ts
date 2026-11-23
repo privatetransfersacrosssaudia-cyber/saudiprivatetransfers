@@ -355,6 +355,14 @@ export const jeddahHub: JeddahHubContent = {
 
   related: [
     {
+      routeKey: "umrahTransfers",
+      label: { en: "Umrah transfers", ar: "نقل العمرة" },
+      note: {
+        en: "The whole trip as one arrangement: the airport arrival, the hotel runs, the road between the holy cities and the departure leg.",
+        ar: "الرحلة كلها ترتيبًا واحدًا: الوصول من المطار، والتنقل بين الفنادق، والطريق بين المدينتين المقدستين، ورحلة المغادرة.",
+      },
+    },
+    {
       routeKey: "jeddahHotel",
       label: { en: "Jeddah hotel transfers", ar: "النقل من فنادق جدة" },
       note: {

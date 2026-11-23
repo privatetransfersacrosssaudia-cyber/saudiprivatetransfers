@@ -18,7 +18,7 @@ import type { ClusterCta, ClusterFaq, RelatedLink } from "@/lib/content/riyadh/t
  * - All year: entry to Makkah is restricted to Muslims (Visit Saudi, the
  *   official tourism site).
  * - Around Hajj, the Ministry of Interior announces further restrictions each
- *   season. The 1447 AH (2026) arrangements are shown **as a dated example
+ *   season. The arrangements are shown **as a recurring pattern only**
  *   only** — never as a rule for a future season, and no future dates are
  *   projected.
  * - Business policy, approved by the owner: we do not accept or carry a
@@ -195,12 +195,12 @@ export const jeddahMakkah: JeddahMakkahContent = {
     },
     example: {
       heading: {
-        en: "An example: the 1447 AH (2026) season",
-        ar: "مثال: ما أعلنته وزارة الداخلية لموسم حج 1447هـ (2026م)",
+        en: "The shape these periods have taken",
+        ar: "الشكل الذي اتخذته هذه الفترات",
       },
       lead: {
-        en: "Shown to make the pattern concrete, not as a rule for next year. These are the arrangements the Ministry of Interior announced for 2026.",
-        ar: "نعرضه لتوضيح الصورة لا بوصفه قاعدة للعام القادم. هذه هي الترتيبات التي أعلنتها وزارة الداخلية لعام 2026م.",
+        en: "Shown to make the pattern concrete, not as a rule for your dates. In recent seasons the Ministry of Interior’s arrangements have run across these three Hijri months, in roughly this shape.",
+        ar: "نعرضه لتوضيح الصورة لا بوصفه قاعدة لتواريخك. ففي المواسم الأخيرة امتدت ترتيبات وزارة الداخلية عبر هذه الأشهر الهجرية الثلاثة، بهذا الشكل تقريبًا.",
       },
       months: [
         { en: "Shawwal", ar: "شوال" },
@@ -208,25 +208,25 @@ export const jeddahMakkah: JeddahMakkahContent = {
         { en: "Dhu al-Hijjah", ar: "ذو الحجة" },
       ],
       residents: {
-        when: { en: "From 25 Shawwal 1447 · 13 April 2026", ar: "من 25 شوال 1447هـ · 13 أبريل 2026م" },
+        when: { en: "From around 25 Shawwal", ar: "من نحو 25 شوال" },
         what: {
-          en: "Residents needed an official permit to enter Makkah — issued electronically through Absher and the Muqeem portal — unless they held a Makkah-issued residence ID, a Hajj permit or a holy-sites work permit.",
-          ar: "اشتُرط على المقيمين الحصول على تصريح رسمي لدخول مكة، يُصدَر إلكترونيًا عبر «أبشر» وبوابة «مقيم»، باستثناء من يحمل هوية مقيم صادرة من مكة المكرمة أو تصريح حج أو تصريح عمل في المشاعر المقدسة.",
+          en: "Residents have needed an official permit to enter Makkah — issued electronically through Absher and the Muqeem portal — unless they held a Makkah-issued residence ID, a Hajj permit or a holy-sites work permit.",
+          ar: "اشتُرط على المقيمين في هذه الفترات الحصول على تصريح رسمي لدخول مكة، يُصدَر إلكترونيًا عبر «أبشر» وبوابة «مقيم»، باستثناء من يحمل هوية مقيم صادرة من مكة المكرمة أو تصريح حج أو تصريح عمل في المشاعر المقدسة.",
         },
       },
       visas: {
         when: {
-          en: "1 Dhu al-Qa'dah – 14 Dhu al-Hijjah 1447 · 18 April – 31 May 2026",
-          ar: "من 1 ذي القعدة إلى 14 ذي الحجة 1447هـ · 18 أبريل – 31 مايو 2026م",
+          en: "Roughly 1 Dhu al-Qa'dah to 14 Dhu al-Hijjah",
+          ar: "من نحو 1 ذي القعدة إلى 14 ذي الحجة",
         },
         what: {
-          en: "Holders of every visa type except a Hajj visa could not enter or stay in Makkah, and Umrah permits on the Nusuk platform were paused.",
-          ar: "مُنع حاملو التأشيرات بأنواعها كافة، باستثناء تأشيرة الحج، من دخول مكة أو البقاء فيها، وأُوقف إصدار تصاريح العمرة عبر منصة «نسك».",
+          en: "Holders of every visa type except a Hajj visa have been unable to enter or stay in Makkah, and Umrah permits on the Nusuk platform have been paused.",
+          ar: "مُنع حاملو التأشيرات بأنواعها كافة، باستثناء تأشيرة الحج، من دخول مكة أو البقاء فيها، وأُوقف إصدار تصاريح العمرة عبر منصة «نسك».".replace("X","X")
         },
       },
       caveat: {
-        en: "Dates follow the Hijri calendar and are announced each season, and the arrangements themselves can change. Check the current announcement for your travel date — not this example.",
-        ar: "تتبع المواعيد التقويم الهجري وتُعلَن في كل موسم، وقد تتغير الترتيبات نفسها. فتحقق من الإعلان الساري لتاريخ رحلتك، لا من هذا المثال.",
+        en: "The exact dates are set afresh each season, their Gregorian equivalents move every year, and the arrangements themselves can change. The current official announcement for your travel date is the only reliable answer — not this outline.",
+        ar: "وتُحدَّد المواعيد الدقيقة من جديد في كل موسم، ويتغير ما يقابلها ميلاديًا كل عام، وقد تتغير الترتيبات نفسها. والإعلان الرسمي الساري لتاريخ رحلتك هو الجواب الموثوق الوحيد، لا هذا العرض.",
       },
     },
     policy: {
@@ -236,8 +236,8 @@ export const jeddahMakkah: JeddahMakkahContent = {
         ar: "لا نقبل ولا ننقل أي راكب لا يحق له نظامًا دخول مكة المكرمة في تاريخ رحلته. فإن كان أحد أفراد مجموعتك قد لا يستطيع الدخول في ذلك اليوم، بسبب القاعدة الدائمة أو قيد موسمي، فأخبرنا قبل الحجز ونُسعّر لك بدلًا من ذلك أجزاء رحلتك المتاحة لك.",
       },
       why: {
-        en: "It protects you as well as us. For the 1447 AH season the Ministry of Interior announced penalties, including fines and confiscation of the vehicle, for transporting visit-visa holders into Makkah during the restriction period.",
-        ar: "وهذا يحميك ويحمينا معًا. ففي موسم 1447هـ أعلنت وزارة الداخلية عقوبات، منها الغرامة ومصادرة وسيلة النقل، بحق من ينقل حاملي تأشيرات الزيارة إلى مكة خلال فترة القيود.",
+        en: "It protects you as well as us. In announced restriction periods the Ministry of Interior has published penalties — including fines and confiscation of the vehicle — for transporting visit-visa holders into Makkah.",
+        ar: "وهذا يحميك ويحمينا معًا. ففي فترات القيود المعلنة تنشر وزارة الداخلية عقوبات — منها الغرامة ومصادرة وسيلة النقل — بحق من ينقل حاملي تأشيرات الزيارة إلى مكة.",
       },
     },
     limit: {
@@ -247,8 +247,8 @@ export const jeddahMakkah: JeddahMakkahContent = {
     official: {
       url: "https://pep.gov.sa/ar/news/926",
       label: {
-        en: "Ministry of Interior arrangements for the 1447 AH Hajj season (in Arabic)",
-        ar: "ترتيبات وزارة الداخلية لموسم حج 1447هـ",
+        en: "Ministry of Interior Hajj-season arrangements, as published for a past season (in Arabic)",
+        ar: "ترتيبات وزارة الداخلية لموسم الحج، كما نُشرت لموسم سابق",
       },
       note: {
         en: "Published by the Pilgrim Experience Program, a Saudi government programme. Look for the current season's announcement before you travel.",
@@ -610,8 +610,8 @@ export const jeddahMakkah: JeddahMakkahContent = {
         ar: "هل يمكن لحامل تأشيرة الزيارة أو السياحة دخول مكة في موسم الحج؟",
       },
       answer: {
-        en: "Outside the restriction periods announced around Hajj, the all-year rule applies: Makkah is open to Muslims. During those periods the rules have barred holders of visas other than a Hajj visa — in the 1447 AH (2026) season, from 1 Dhu al-Qa'dah to 14 Dhu al-Hijjah. Each season's dates and rules are announced by the Ministry of Interior, so check the current announcement for your travel date. If you are not permitted to enter on that date, we cannot take you.",
-        ar: "في فترات القيود التي تُعلَن حول موسم الحج مُنع حاملو التأشيرات غير تأشيرة الحج من دخول مكة؛ ففي موسم 1447هـ (2026م) امتد المنع من 1 ذي القعدة إلى 14 ذي الحجة. وتعلن وزارة الداخلية مواعيد كل موسم وترتيباته، فتحقق من الإعلان الساري لتاريخ رحلتك. ولا يمكننا نقل من لا يحق له الدخول في ذلك التاريخ، ومن ذلك أقاربك القادمون بتأشيرة زيارة.",
+        en: "Outside the restriction periods announced around Hajj, the all-year rule applies: Makkah is open to Muslims. During those periods the rules have barred holders of visas other than a Hajj visa, running in recent seasons from roughly 1 Dhu al-Qa'dah to 14 Dhu al-Hijjah. Each season's dates and rules are announced afresh by the Ministry of Interior, so check the current announcement for your travel date. If you are not permitted to enter on that date, we cannot take you.",
+        ar: "في فترات القيود التي تُعلَن حول موسم الحج مُنع حاملو التأشيرات غير تأشيرة الحج من دخول مكة؛ وقد امتد المنع في المواسم الأخيرة من نحو 1 ذي القعدة إلى 14 ذي الحجة. وتعلن وزارة الداخلية مواعيد كل موسم وترتيباته من جديد، فتحقق من الإعلان الساري لتاريخ رحلتك. ولا يمكننا نقل من لا يحق له الدخول في ذلك التاريخ، ومن ذلك أقاربك القادمون بتأشيرة زيارة.",
       },
     },
     {
@@ -620,8 +620,8 @@ export const jeddahMakkah: JeddahMakkahContent = {
         ar: "هل أحتاج إلى تصريح لدخول مكة؟",
       },
       answer: {
-        en: "It depends on who you are and when you travel. In the restriction periods announced around Hajj, residents have needed an official entry permit — in the 1447 AH season from 25 Shawwal, issued electronically through Absher and the Muqeem portal. Umrah permits are issued through the Nusuk platform. We do not issue or arrange permits; check the current official announcement for your date.",
-        ar: "يعتمد ذلك على صفتك وموعد سفرك. ففي فترات القيود التي تُعلَن حول موسم الحج احتاج المقيمون إلى تصريح رسمي لدخول مكة، وفي موسم 1447هـ بدأ ذلك من 25 شوال وصدرت التصاريح إلكترونيًا عبر «أبشر» وبوابة «مقيم»، مع استثناء من يحمل هوية مقيم صادرة من مكة. أما تصاريح العمرة فتُصدَر عبر منصة «نسك». ونحن لا نُصدر التصاريح ولا نرتّبها، فتحقق من الإعلان الرسمي الساري لتاريخك.",
+        en: "It depends on who you are and when you travel. In the restriction periods announced around Hajj, residents have needed an official entry permit — in recent seasons from around 25 Shawwal, issued electronically through Absher and the Muqeem portal. Umrah permits are issued through the Nusuk platform. We do not issue or arrange permits; check the current official announcement for your date.",
+        ar: "يعتمد ذلك على صفتك وموعد سفرك. ففي فترات القيود التي تُعلَن حول موسم الحج احتاج المقيمون إلى تصريح رسمي لدخول مكة، وبدأ ذلك في المواسم الأخيرة من نحو 25 شوال وصدرت التصاريح إلكترونيًا عبر «أبشر» وبوابة «مقيم»، مع استثناء من يحمل هوية مقيم صادرة من مكة. أما تصاريح العمرة فتُصدَر عبر منصة «نسك». ونحن لا نُصدر التصاريح ولا نرتّبها، فتحقق من الإعلان الرسمي الساري لتاريخك.",
       },
     },
     {
@@ -657,6 +657,14 @@ export const jeddahMakkah: JeddahMakkahContent = {
   ],
 
   related: [
+    {
+      routeKey: "umrahTransfers",
+      label: { en: "Umrah transfers", ar: "نقل العمرة" },
+      note: {
+        en: "The whole trip as one arrangement: the airport arrival, the hotel runs, the road between the holy cities and the departure leg.",
+        ar: "الرحلة كلها ترتيبًا واحدًا: الوصول من المطار، والتنقل بين الفنادق، والطريق بين المدينتين المقدستين، ورحلة المغادرة.",
+      },
+    },
     {
       routeKey: "makkah",
       label: { en: "Private transfers in Makkah", ar: "توصيل خاص في مكة المكرمة" },

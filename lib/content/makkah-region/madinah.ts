@@ -597,6 +597,14 @@ export const makkahMadinah = {
   relatedHeading: { en: "Related journeys", ar: "رحلات ذات صلة" },
   related: [
     {
+      routeKey: "umrahTransfers" as RouteKey,
+      label: { en: "Umrah transfers", ar: "نقل العمرة" },
+      note: {
+        en: "The whole trip as one arrangement: the airport arrival, the hotel runs, the road between the holy cities and the departure leg.",
+        ar: "الرحلة كلها ترتيبًا واحدًا: الوصول من المطار، والتنقل بين الفنادق، والطريق بين المدينتين المقدستين، ورحلة المغادرة.",
+      },
+    },
+    {
       routeKey: "makkah" as RouteKey,
       label: { en: "Makkah transfers", ar: "التوصيل في مكة المكرمة" },
       note: {

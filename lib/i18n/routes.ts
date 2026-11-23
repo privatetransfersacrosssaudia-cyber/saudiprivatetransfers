@@ -34,6 +34,7 @@ export const route = {
   jeddahToMakkah: "jeddah-to-makkah",
   jeddahToMadinah: "jeddah-to-madinah",
   makkahToMadinah: "makkah-to-madinah",
+  umrahTransfers: "umrah-transfers",
   madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
@@ -112,6 +113,11 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // The pilgrimage corridor, and the most requested intercity journey on the
   // site — ranked with the established Jeddah route rather than below it.
   makkahToMadinah: { priority: 0.8, changeFrequency: "monthly" },
+  // The one page organised around a trip rather than a place or a road, and
+  // the entry point for the journey set this cluster exists to serve. Level
+  // with the city hubs rather than with a single route page: it is the parent
+  // of several of them, and it is the highest commercial intent on the site.
+  umrahTransfers: { priority: 0.9, changeFrequency: "monthly" },
   // An airport service page, ranked with the other two rather than with the
   // destination hubs it sits under.
   madinahAirport: { priority: 0.8, changeFrequency: "monthly" },
