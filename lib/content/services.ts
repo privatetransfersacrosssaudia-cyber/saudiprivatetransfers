@@ -99,6 +99,7 @@ export const services: Service[] = [
   },
   {
     slug: "ziyarat-transfers",
+    routeKey: "ziyaratTransfers",
     name: { en: "Ziyarat Transfers", ar: "رحلات الزيارة" },
     summary: {
       en: "Private half-day and full-day visits to sites around the holy cities.",

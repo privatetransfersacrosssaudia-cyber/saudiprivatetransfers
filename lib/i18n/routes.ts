@@ -38,6 +38,9 @@ export const route = {
   airportTransfers: "airport-transfers",
   cityToCity: "city-to-city-transfers",
   hotelTransfers: "hotel-transfers",
+  ziyaratTransfers: "ziyarat-transfers",
+  makkahZiyarat: "makkah-ziyarat-transfers",
+  madinahZiyarat: "madinah-ziyarat-transfers",
   madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
@@ -135,6 +138,15 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // larger rather than the journey someone sets out to buy, which is the
   // same reason the two city hotel pages sit at 0.6.
   hotelTransfers: { priority: 0.8, changeFrequency: "monthly" },
+  // The hub of the Ziyarat cluster. Dedicated Makkah and Madinah Ziyarat
+  // pages are planned beneath it; this one holds the national intent and
+  // deliberately leaves the per-site detail to them.
+  ziyaratTransfers: { priority: 0.8, changeFrequency: "monthly" },
+  // The first location page under the Ziyarat hub. Level with it: a search
+  // naming Makkah should land here rather than on the national page.
+  makkahZiyarat: { priority: 0.8, changeFrequency: "monthly" },
+  // The second location page under the Ziyarat hub, level with Makkah's.
+  madinahZiyarat: { priority: 0.8, changeFrequency: "monthly" },
   // An airport service page, ranked with the other two rather than with the
   // destination hubs it sits under.
   madinahAirport: { priority: 0.8, changeFrequency: "monthly" },

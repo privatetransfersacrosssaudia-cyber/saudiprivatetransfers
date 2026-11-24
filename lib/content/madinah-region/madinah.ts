@@ -317,6 +317,14 @@ export const madinah: MadinahContent = {
 
   related: [
     {
+      routeKey: "madinahZiyarat",
+      label: { en: "Madinah Ziyarat transfers", ar: "النقل للزيارة في المدينة" },
+      note: {
+        en: "Pick the sites you want and we quote the driving as one journey — grouped by the direction they lie in.",
+        ar: "اختر المواضع التي تريدها ونسعّر القيادة رحلةً واحدة — مرتَّبة بحسب الجهة التي تقع فيها.",
+      },
+    },
+    {
       routeKey: "umrahTransfers",
       label: { en: "Umrah transfers", ar: "نقل العمرة" },
       note: {

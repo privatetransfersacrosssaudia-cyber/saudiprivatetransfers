@@ -346,6 +346,14 @@ export const makkah: MakkahContent = {
 
   related: [
     {
+      routeKey: "makkahZiyarat",
+      label: { en: "Makkah Ziyarat transfers", ar: "النقل للزيارة في مكة" },
+      note: {
+        en: "Pick the places you want to visit and we quote the driving as one journey, with an honest note on what each stop involves.",
+        ar: "اختر المواضع التي تريد زيارتها ونسعّر القيادة رحلةً واحدة، مع بيان صادق لما يتطلبه كل موضع.",
+      },
+    },
+    {
       routeKey: "umrahTransfers",
       label: { en: "Umrah transfers", ar: "نقل العمرة" },
       note: {
