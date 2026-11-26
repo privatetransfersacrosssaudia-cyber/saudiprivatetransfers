@@ -162,7 +162,7 @@ export default async function ZiyaratTransfersPage({
 
           <div className="mt-8 max-w-3xl">
             <p className="text-eyebrow text-brass">{content.eyebrow[locale]}</p>
-            <h1 className="text-h1 mt-4 text-balance text-white">
+            <h1 className="text-display mt-4 text-balance text-white">
               {content.title[locale]}
             </h1>
             <p className="mt-6 text-lg leading-relaxed text-white/85">

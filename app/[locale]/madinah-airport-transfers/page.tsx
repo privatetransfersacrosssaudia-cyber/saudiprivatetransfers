@@ -152,7 +152,7 @@ export default async function MadinahAirportTransfersPage({
           <div className="mt-8 grid gap-10 lg:grid-cols-[minmax(0,1fr)_auto] lg:items-end">
             <div className="max-w-2xl">
               <p className="text-eyebrow text-brass">{content.eyebrow[locale]}</p>
-              <h1 className="text-h1 mt-4 text-balance text-white">
+              <h1 className="text-display mt-4 text-balance text-white">
                 {content.title[locale]}
               </h1>
               <p className="mt-6 text-lg leading-relaxed text-white/85">

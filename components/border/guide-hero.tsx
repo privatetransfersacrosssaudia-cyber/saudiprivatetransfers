@@ -74,7 +74,7 @@ export function BorderGuideHero({
       <div className="site-container pt-32 pb-16 md:pt-34 lg:pt-42 lg:pb-24">
         <div className="max-w-3xl">
           <p className="text-eyebrow text-brass">{eyebrow[locale]}</p>
-          <h1 className="text-h1 mt-4 text-balance text-white">
+          <h1 className="text-display mt-4 text-balance text-white">
             {title[locale]}
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-white/85">

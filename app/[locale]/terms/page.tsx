@@ -62,7 +62,7 @@ export default async function TermsPage({
             <p className="text-eyebrow text-brass-deep">
               {terms.eyebrow[locale]}
             </p>
-            <h1 className="text-h1 mt-3 text-balance text-ink">
+            <h1 className="text-display mt-3 text-balance text-ink">
               {terms.title[locale]}
             </h1>
             <p className="mt-5 text-lg leading-relaxed text-ink/80">
