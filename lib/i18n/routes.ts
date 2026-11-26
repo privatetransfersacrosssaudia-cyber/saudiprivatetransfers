@@ -41,6 +41,7 @@ export const route = {
   ziyaratTransfers: "ziyarat-transfers",
   makkahZiyarat: "makkah-ziyarat-transfers",
   madinahZiyarat: "madinah-ziyarat-transfers",
+  privateDayTrips: "private-day-trips",
   madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
@@ -147,6 +148,11 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   makkahZiyarat: { priority: 0.8, changeFrequency: "monthly" },
   // The second location page under the Ziyarat hub, level with Makkah's.
   madinahZiyarat: { priority: 0.8, changeFrequency: "monthly" },
+  // The head of the day-trip cluster, and the only page in it for now. Level
+  // with the other service pages it sits beside: the intent it serves (a
+  // driver who stays for an agreed outing) is distinct from a transfer, so
+  // it should not sit below them.
+  privateDayTrips: { priority: 0.9, changeFrequency: "monthly" },
   // An airport service page, ranked with the other two rather than with the
   // destination hubs it sits under.
   madinahAirport: { priority: 0.8, changeFrequency: "monthly" },

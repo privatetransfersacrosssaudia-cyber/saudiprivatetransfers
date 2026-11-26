@@ -123,6 +123,7 @@ export const services: Service[] = [
       ar: "استئجار ليوم كامل لوجهات مثل الدرعية، وحافة طويق قرب الرياض، وطريق الطائف الجبلي، أو العُلا، مع بقاء السيارة معك طوال اليوم.",
     },
     imageKey: "svc-daytrip",
+    routeKey: "privateDayTrips",
   },
   {
     slug: "border-transfers",
