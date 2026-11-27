@@ -126,15 +126,15 @@ export const about = {
     {
       name: { en: "Journeys to land borders", ar: "الرحلات إلى المنافذ البرية" },
       body: {
-        en: "Road journeys to crossings such as the King Fahd Causeway — on the Saudi side only, to a drop-off point before the crossing.",
-        ar: "رحلات برية إلى منافذ مثل جسر الملك فهد — على الجانب السعودي فقط، حتى نقطة نزول قبل المعبر.",
+        en: "Journeys out of the Kingdom to confirmed neighbouring destinations, including across the King Fahd Causeway to addresses in Bahrain.",
+        ar: "رحلات من المملكة إلى وجهات مجاورة مؤكَّدة، منها العبور عبر جسر الملك فهد إلى عناوين في البحرين.",
       },
       routeKey: "saudiToBahrain" as RouteKey,
     },
   ],
   servicesFootnote: {
-    en: "We provide transfers inside Saudi Arabia. We do not cross land borders and do not provide transport in neighbouring countries.",
-    ar: "نقدّم رحلات النقل الخاص داخل المملكة العربية السعودية. ولا نعبر المنافذ البرية ولا نقدّم النقل في الدول المجاورة.",
+    en: "We provide transfers inside Saudi Arabia, and cross-border journeys to confirmed neighbouring destinations. We do not issue visas, process border formalities or give immigration advice.",
+    ar: "نقدّم رحلات النقل الخاص داخل المملكة العربية السعودية، ورحلات عابرة للحدود إلى وجهات مجاورة مؤكَّدة. ولا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات.",
   },
 
   // --- Coverage --------------------------------------------------------------

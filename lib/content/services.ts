@@ -127,16 +127,17 @@ export const services: Service[] = [
   },
   {
     slug: "border-transfers",
-    name: { en: "Border Transfers", ar: "النقل إلى المنافذ الحدودية" },
+    name: { en: "Cross-Border Transfers", ar: "النقل عبر الحدود" },
     summary: {
-      en: "Road journeys to and from Saudi Arabia's land border crossings.",
-      ar: "رحلات برية من وإلى المنافذ الحدودية البرية في المملكة.",
+      en: "Private journeys out of Saudi Arabia to neighbouring countries.",
+      ar: "رحلات خاصة من السعودية إلى الدول المجاورة.",
     },
     detail: {
-      en: "Road journeys to land crossings such as the King Fahd Causeway to Bahrain, on the Saudi side only, to an agreed drop-off point before the crossing. The crossing and any transport beyond it are arranged separately by the traveller, as are visas and border formalities.",
-      ar: "رحلات برية إلى المنافذ البرية مثل جسر الملك فهد إلى البحرين، على الجانب السعودي فقط، حتى نقطة نزول متفق عليها قبل المعبر. أما العبور وأي نقل بعده فيرتّبه المسافر بنفسه، وكذلك التأشيرات وإجراءات الحدود.",
+      en: "Pickup anywhere in the Kingdom and on to a destination in the UAE, Bahrain, Qatar, Kuwait, Oman or Jordan. Whether one car makes the whole trip or the journey changes hands at the border depends on the route, and is confirmed in writing. Visas and border formalities stay with the traveller.",
+      ar: "استقبال من أي مكان في المملكة ومضيّ إلى وجهة في الإمارات أو البحرين أو قطر أو الكويت أو عُمان أو الأردن. وبقاء سيارة واحدة طوال الطريق أو انتقال الرحلة عند الحدود يعتمد على المسار، ويُؤكَّد كتابةً. وتبقى التأشيرات وإجراءات الحدود على المسافر.",
     },
     imageKey: "svc-border",
+    routeKey: "crossBorderTransfers",
   },
 ];
 

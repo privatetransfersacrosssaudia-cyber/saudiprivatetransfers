@@ -247,19 +247,32 @@ export const bahrainPage = {
   // --- Conversion ------------------------------------------------------------
 
   routesHeading: {
-    en: "Getting to the Saudi side",
-    ar: "الوصول إلى الجانب السعودي",
+    en: "Getting to the causeway, and across it",
+    ar: "الوصول إلى الجسر، وعبوره",
   },
   routesIntro: {
-    en: "The causeway starts just outside Al Khobar, and most people reach it by road from elsewhere in the Kingdom. These are the journeys we do run — all of them ending on the Saudi side.",
-    ar: "يبدأ الجسر من خارج الخبر مباشرة، ويصل إليه معظم الناس برًّا من مناطق أخرى في المملكة. وهذه هي الرحلات التي نشغّلها فعلًا — وجميعها تنتهي على الجانب السعودي.",
+    en: "The causeway starts just outside Al Khobar, and most people reach it by road from elsewhere in the Kingdom. These are the journeys most often asked for — and they can either end at the crossing or carry on over it to an address in Bahrain.",
+    ar: "يبدأ الجسر من خارج الخبر مباشرة، ويصل إليه معظم الناس برًّا من مناطق أخرى في المملكة. وهذه أكثر الرحلات طلبًا — ويمكن أن تنتهي عند المعبر أو تمضي عبره إلى عنوان في البحرين.",
   },
   routesFootnote: {
-    en: "We do not cross the causeway and we do not provide transport inside Bahrain. The crossing itself, and anything beyond it, is yours to arrange.",
-    ar: "نحن لا نعبر الجسر ولا نقدّم النقل داخل البحرين. أما العبور نفسه وما بعده فهو من ترتيبك.",
+    en: "Say in your enquiry whether you want the journey to end at the causeway or to continue into Bahrain — they are quoted differently. Whether one car makes the whole trip depends on the route and is confirmed with the quotation.",
+    ar: "اذكر في طلبك إن كنت تريد أن تنتهي الرحلة عند الجسر أو أن تمضي إلى داخل البحرين — فلكلٍّ تسعيره. وبقاء سيارة واحدة طوال الطريق يعتمد على المسار ويُؤكَّد مع عرض السعر.",
   },
 
   relatedRoutes: [
+    {
+      // First in the list on purpose: this guide answers "how does the
+      // crossing work", and the next thing a reader wants is the car.
+      routeKey: "saudiToBahrainTransfers",
+      label: {
+        en: "Private transfers to Bahrain",
+        ar: "النقل الخاص إلى البحرين",
+      },
+      description: {
+        en: "Arranging the journey itself — pickup anywhere in the Kingdom, across the causeway, to an address in Bahrain.",
+        ar: "ترتيب الرحلة نفسها — استقبال من أي مكان في المملكة، وعبورًا للجسر، إلى عنوان في البحرين.",
+      },
+    },
     {
       routeKey: "riyadhToAlKhobar",
       label: { en: "Riyadh to Al Khobar", ar: "الرياض إلى الخبر" },
@@ -308,19 +321,19 @@ export const bahrainPage = {
 
   ctaClosing: {
     heading: {
-      en: "Planning the Saudi-side journey?",
-      ar: "هل تخطط للجزء السعودي من الرحلة؟",
+      en: "Planning the journey across?",
+      ar: "هل تخطط لرحلة العبور؟",
     },
     body: {
-      en: "Tell us where you are starting from and when, and we will reply with a written quotation. Our journeys end on the Saudi side of the causeway — the crossing is yours to make.",
-      ar: "أخبرنا من أين تنطلق ومتى، ونرد عليك بعرض سعر مكتوب. تنتهي رحلاتنا عند الجانب السعودي من الجسر — أما العبور فمن ترتيبك.",
+      en: "Tell us where you are starting from, when, and whether you are heading for an address in Bahrain or stopping at the crossing. We will reply with a written quotation. Your documents and your admission at the border stay yours to arrange.",
+      ar: "أخبرنا من أين تنطلق ومتى، وهل تقصد عنوانًا في البحرين أم تتوقف عند المعبر. وسنرد عليك بعرض سعر مكتوب. وتبقى وثائقك ودخولك عند الحدود من ترتيبك.",
     },
     cta: { en: "Request a quotation", ar: "اطلب عرض سعر" },
   },
 
   whatsappMessage: {
-    en: "Hello — I am planning a journey towards the King Fahd Causeway and would like a quotation for transport on the Saudi side.",
-    ar: "مرحبًا — أخطط لرحلة باتجاه جسر الملك فهد وأرغب في عرض سعر للنقل على الجانب السعودي.",
+    en: "Hello — I am planning a journey across the King Fahd Causeway and would like a quotation.",
+    ar: "مرحبًا — أخطط لرحلة عبر جسر الملك فهد وأرغب في عرض سعر.",
   },
 
   bookingHeading: { en: "How an enquiry works", ar: "كيف يسير الطلب" },

@@ -15,10 +15,12 @@ import type { BorderGuide, Source } from "./types";
  *    from blogs, the page says what is unknown and sends the reader to the
  *    tool that knows.
  *
- * 2. Nothing here claims we provide cross-border transport. Two live pages —
- *    the Dammam hub and the Riyadh to Al Khobar route — state plainly that our
- *    journeys end on the Saudi side. This guide is travel information, and
- *    `serviceNotice` repeats that position so a layout change cannot drop it.
+ * 2. The guide used to say we did not cross the causeway, which matched the
+ *    rest of the site at the time. The owner has since confirmed that we do:
+ *    pickup anywhere in the Kingdom, across the border, on to an address in
+ *    Bahrain. `serviceNotice` now says so while keeping the separation that
+ *    actually matters — we arrange the driving; the authorities decide entry,
+ *    and nothing on this page is a promise about a crossing.
  *
  * Verification pass: 16 November 2026. See docs/research/border/source-matrix.md.
  */
@@ -141,8 +143,8 @@ export const bahrainGuide: BorderGuide = {
   },
 
   serviceNotice: {
-    en: "This is travel information, not a service offer. Our own journeys end on the Saudi side of the causeway: we do not cross it and we do not provide transport inside Bahrain. Sending us an enquiry is not a request we can fulfil for a cross-border journey, and nothing on this page should be read as an offer to carry you into Bahrain.",
-    ar: "هذه معلومات للسفر وليست عرض خدمة. رحلاتنا تنتهي على الجانب السعودي من الجسر: نحن لا نعبره ولا نقدّم النقل داخل البحرين. وإرسال طلب إلينا ليس طلبًا يمكننا تلبيته لرحلة عابرة للحدود، ولا ينبغي قراءة أي شيء في هذه الصفحة على أنه عرض لنقلك إلى البحرين.",
+    en: "What follows is travel information, gathered from official sources and marked where it could not be confirmed. We do arrange the journey itself — pickup anywhere in the Kingdom, across the causeway, on to an address in Bahrain — but none of that changes the rules below. Entry is decided by the authorities, not by us, and what you read here is for your planning rather than a promise about your crossing.",
+    ar: "ما يلي معلومات للسفر، جُمعت من مصادر رسمية ووُسمت حيث تعذّر تأكيدها. ونحن نرتّب الرحلة نفسها — استقبال من أي مكان في المملكة، وعبورًا للجسر، ووصولًا إلى عنوان في البحرين — غير أن ذلك لا يغيّر شيئًا من الأنظمة أدناه. فالدخول تقرّره الجهات الرسمية لا نحن، وما تقرؤه هنا لتخطيطك لا وعدًا بشأن عبورك.",
   },
 
   sections: [
@@ -694,8 +696,8 @@ export const bahrainGuide: BorderGuide = {
         ar: "هل يمكنكم نقلنا إلى البحرين؟",
       },
       answer: {
-        en: "No. Our journeys end on the Saudi side of the causeway. We do not cross it and we do not provide transport inside Bahrain. We can take you to Al Khobar or Dammam; the crossing itself, and onward travel, are yours to arrange.",
-        ar: "لا. تنتهي رحلاتنا عند الجانب السعودي من الجسر. نحن لا نعبره ولا نقدّم النقل داخل البحرين. يمكننا نقلك إلى الخبر أو الدمام؛ أما العبور نفسه والتنقل بعده فهما من ترتيبك.",
+        en: "Yes. Pickup can be from anywhere in the Kingdom and the journey can carry on across the causeway to an address in Bahrain. Whether the same driver and vehicle make the whole trip, or the journey changes hands after the border, depends on the route and is confirmed in the written quotation. Your documents and your admission to Bahrain remain yours to arrange — a booking with us is not permission to enter.",
+        ar: "نعم. يمكن أن يكون الاستقبال من أي مكان في المملكة، وأن تمضي الرحلة عبر الجسر إلى عنوان في البحرين. أما بقاء السائق والمركبة نفسيهما طوال الطريق، أو انتقال الرحلة إلى يد أخرى بعد الحدود، فيعتمد على المسار ويُؤكَّد في عرض السعر المكتوب. وتبقى وثائقك ودخولك إلى البحرين من ترتيبك — فالحجز معنا ليس إذنًا بالدخول.",
       },
       status: "verified",
       sources: [],

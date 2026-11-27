@@ -218,8 +218,8 @@ export const contact = {
       routeKey: "saudiToBahrain" as RouteKey,
       label: { en: "Border crossing guide", ar: "دليل عبور الحدود" },
       body: {
-        en: "Travel information for the King Fahd Causeway. We do not cross it.",
-        ar: "معلومات سفر عن جسر الملك فهد. ونحن لا نعبره.",
+        en: "Travel information for the King Fahd Causeway, and the journeys across it.",
+        ar: "معلومات سفر عن جسر الملك فهد، والرحلات عبره.",
       },
     },
   ],

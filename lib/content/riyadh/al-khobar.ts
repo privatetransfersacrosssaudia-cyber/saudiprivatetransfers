@@ -71,8 +71,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
       label: { en: "Onward", ar: "المتابعة" },
       value: { en: "King Fahd Causeway", ar: "جسر الملك فهد" },
       note: {
-        en: "The land crossing to Bahrain starts just outside Al Khobar. Our journeys end on the Saudi side; the crossing, visas and border formalities are yours to arrange.",
-        ar: "يبدأ المعبر البري إلى البحرين خارج الخبر مباشرة. وتنتهي رحلاتنا على الجانب السعودي، أما العبور والتأشيرات وإجراءات الحدود فمسؤوليتك.",
+        en: "The land crossing to Bahrain starts just outside Al Khobar, and the journey can continue over it to an address in Bahrain. Visas and border formalities remain yours to arrange.",
+        ar: "يبدأ المعبر البري إلى البحرين خارج الخبر مباشرة، ويمكن أن تمضي الرحلة عبره إلى عنوان في البحرين. وتبقى التأشيرات وإجراءات الحدود مسؤوليتك.",
       },
     },
   ],
@@ -172,8 +172,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         heading: { en: "What we arrange", ar: "ما نرتّبه" },
         paragraphs: [
           {
-            en: "We can take you from Riyadh to an agreed drop-off point on the Saudi side of the King Fahd Causeway. Our journey ends there: we do not drive across the causeway or provide transport in Bahrain.",
-            ar: "يمكننا نقلك من الرياض إلى نقطة نزول متفق عليها على الجانب السعودي من جسر الملك فهد، وتنتهي رحلتنا هناك؛ فنحن لا نعبر الجسر ولا نقدّم النقل داخل البحرين.",
+            en: "We can take you from Riyadh to the King Fahd Causeway, and across it to an address in Bahrain if that is what you need. Say which in your enquiry — ending at the crossing and continuing into Bahrain are quoted differently.",
+            ar: "يمكننا نقلك من الرياض إلى جسر الملك فهد، وعبره إلى عنوان في البحرين إن كان ذلك مرادك. فاذكر أيّهما في طلبك — إذ يختلف تسعير الانتهاء عند المعبر عن المضيّ إلى داخل البحرين.",
           },
         ],
       },
@@ -181,8 +181,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         heading: { en: "What we do not do", ar: "ما لا نقوم به" },
         paragraphs: [
           {
-            en: "We do not cross the causeway, provide the Bahrain-side journey, issue visas, process border formalities or give immigration advice. The crossing and onward transport in Bahrain are yours to arrange separately, with a service licensed for the crossing, and entry requirements for Bahrain are yours to check and meet.",
-            ar: "لا نعبر الجسر ولا نقدّم النقل على الجانب البحريني، ولا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات. والعبور والنقل داخل البحرين ترتّبهما بنفسك مع خدمة مرخّصة للعبور، ومتطلبات دخول البحرين مسؤوليتك في التحقق منها واستيفائها.",
+            en: "We do not issue visas, process border formalities or give immigration advice, and we cannot promise how long a crossing will take. Entry requirements for Bahrain are yours to check and meet, and admission is decided by the authorities at the border rather than by the fact that you booked a car.",
+            ar: "لا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات، ولا نستطيع الوعد بمدة العبور. ومتطلبات دخول البحرين مسؤوليتك في التحقق منها واستيفائها، والسماح بالدخول تقرّره الجهات عند الحدود لا كونك حجزت سيارة.",
           },
         ],
       },
@@ -287,8 +287,8 @@ export const riyadhToAlKhobar: RoutePageContent = {
         ar: "هل يمكنكم نقلنا عبر جسر الملك فهد إلى البحرين؟",
       },
       answer: {
-        en: "No. We can take you from Riyadh to an agreed drop-off point on the Saudi side of the causeway, and our journey ends there. Crossing the causeway and transport in Bahrain are arranged separately by you, with a service licensed for the crossing. Visas and border formalities are yours to arrange — we do not process them and do not give immigration advice.",
-        ar: "لا. يمكننا نقلك من الرياض إلى نقطة نزول متفق عليها على الجانب السعودي من الجسر، وتنتهي رحلتنا هناك. أما عبور الجسر والنقل داخل البحرين فترتّبهما بنفسك مع خدمة مرخّصة للعبور. والتأشيرات وإجراءات الحدود مسؤوليتك — فنحن لا ننجزها ولا نقدّم استشارات جوازات.",
+        en: "Yes. The journey can run from Riyadh across the causeway to an address in Bahrain, or stop at the crossing if you prefer — the two are quoted differently, so say which you want. Whether the same driver and vehicle continue over the border depends on the route and is confirmed in the quotation. Visas and border formalities are yours to arrange; we do not process them and do not give immigration advice.",
+        ar: "نعم. يمكن أن تمضي الرحلة من الرياض عبر الجسر إلى عنوان في البحرين، أو تتوقف عند المعبر إن فضّلت — ولكلٍّ تسعيره، فاذكر أيّهما تريد. وبقاء السائق والمركبة نفسيهما بعد الحدود يعتمد على المسار ويُؤكَّد في عرض السعر. والتأشيرات وإجراءات الحدود مسؤوليتك؛ فنحن لا ننجزها ولا نقدّم استشارات جوازات.",
       },
     },
     {

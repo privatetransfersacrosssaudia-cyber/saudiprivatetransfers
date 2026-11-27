@@ -102,8 +102,8 @@ export const terms = {
           ar: "تنطبق هذه الشروط على استخدامك لهذا الموقع وعلى خدمات النقل الخاص التي نقدّمها لك. وبإرسالك طلبًا فإنك تقبلها.",
         },
         {
-          en: "We provide private ground transport for journeys inside Saudi Arabia — airports, hotels, journeys within a city and long road routes between cities. We do not cross land borders and we do not provide transport in other countries.",
-          ar: "نحن نقدّم النقل البري الخاص للرحلات داخل المملكة العربية السعودية — المطارات والفنادق والتنقل داخل المدينة والمسارات البرية الطويلة بين المدن. ولا نعبر الحدود البرية ولا نقدّم النقل في دول أخرى.",
+          en: "We provide private ground transport for journeys inside Saudi Arabia — airports, hotels, journeys within a city and long road routes between cities — and cross-border journeys from Saudi Arabia to confirmed neighbouring destinations, arranged individually and subject to a written quotation. We do not issue visas, process border formalities or give immigration advice, and entry to any country is decided by its authorities rather than by us.",
+          ar: "نحن نقدّم النقل البري الخاص للرحلات داخل المملكة العربية السعودية — المطارات والفنادق والتنقل داخل المدينة والمسارات البرية الطويلة بين المدن — وكذلك الرحلات العابرة للحدود من السعودية إلى وجهات مجاورة مؤكَّدة، تُرتَّب كلٌّ على حدة وتخضع لعرض سعر مكتوب. ولا نُصدر تأشيرات ولا نُنجز إجراءات الحدود ولا نقدّم استشارات جوازات، والدخول إلى أي بلد تقرّره سلطاته لا نحن.",
         },
         {
           en: "Some pages on this site are travel information rather than a service we sell. The border-crossing guide is the clearest example: it describes a journey we do not operate, and it exists to be useful, not to be booked.",

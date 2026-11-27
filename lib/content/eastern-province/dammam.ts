@@ -204,8 +204,8 @@ export const dammam: DammamContent = {
           },
         ],
         note: {
-          en: "The King Fahd Causeway to Bahrain starts just south of Al Khobar. Our service stays in Saudi Arabia: we do not cross the causeway or provide transport in Bahrain.",
-          ar: "ويبدأ جسر الملك فهد إلى البحرين جنوب الخبر مباشرة، وخدمتنا داخل المملكة فقط، فنحن لا نعبر الجسر ولا نقدّم النقل داخل البحرين.",
+          en: "The King Fahd Causeway to Bahrain starts just south of Al Khobar, and journeys can carry on across it to an address in Bahrain rather than stopping at the crossing.",
+          ar: "ويبدأ جسر الملك فهد إلى البحرين جنوب الخبر مباشرة، ويمكن أن تمضي الرحلات عبره إلى عنوان في البحرين بدل التوقف عند المعبر.",
         },
       },
     ],
@@ -288,8 +288,8 @@ export const dammam: DammamContent = {
     {
       question: { en: "Can you take us across the King Fahd Causeway to Bahrain?", ar: "هل يمكنكم نقلنا عبر جسر الملك فهد إلى البحرين؟" },
       answer: {
-        en: "No. Our service stays in Saudi Arabia: we do not cross the causeway or provide transport in Bahrain. Visas and border formalities are yours to arrange.",
-        ar: "لا. خدمتنا داخل المملكة فقط، فنحن لا نعبر الجسر ولا نقدّم النقل داخل البحرين، والتأشيرات وإجراءات الحدود مسؤوليتك.",
+        en: "Yes. The journey can cross the causeway and continue to an address in Bahrain, or end at the crossing if you prefer. Whether the same car makes the whole trip depends on the route and is confirmed in the quotation. Visas and border formalities are yours to arrange.",
+        ar: "نعم. يمكن أن تعبر الرحلة الجسر وتمضي إلى عنوان في البحرين، أو تنتهي عند المعبر إن فضّلت. وبقاء السيارة نفسها طوال الطريق يعتمد على المسار ويُؤكَّد في عرض السعر. والتأشيرات وإجراءات الحدود مسؤوليتك.",
       },
     },
   ],

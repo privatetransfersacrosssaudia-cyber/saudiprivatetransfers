@@ -42,6 +42,13 @@ export const route = {
   makkahZiyarat: "makkah-ziyarat-transfers",
   madinahZiyarat: "madinah-ziyarat-transfers",
   privateDayTrips: "private-day-trips",
+  crossBorderTransfers: "cross-border-transfers",
+  saudiToUae: "saudi-arabia-to-uae",
+  saudiToBahrainTransfers: "saudi-arabia-to-bahrain",
+  saudiToQatar: "saudi-arabia-to-qatar",
+  saudiToKuwait: "saudi-arabia-to-kuwait",
+  saudiToOman: "saudi-arabia-to-oman",
+  saudiToJordan: "saudi-arabia-to-jordan",
   madinahAirport: "madinah-airport-transfers",
   alKharj: "al-kharj",
   diriyah: "diriyah",
@@ -153,6 +160,20 @@ const sitemapMeta: Record<RouteKey, { priority: number; changeFrequency: "weekly
   // driver who stays for an agreed outing) is distinct from a transfer, so
   // it should not sit below them.
   privateDayTrips: { priority: 0.9, changeFrequency: "monthly" },
+  // The head of the cross-border cluster. `weekly` for the same reason the
+  // Bahrain crossing guide uses it: border arrangements and the rules around
+  // them move, and this page should be re-read rather than cached as settled.
+  crossBorderTransfers: { priority: 0.9, changeFrequency: "weekly" },
+  // The five country pages under the cross-border hub. Level with each other
+  // and a step below the hub: a search naming a country should land on its own
+  // page, but the hub still holds the general intent. `weekly` for the same
+  // reason as the hub — the arrangements behind them move.
+  saudiToUae: { priority: 0.8, changeFrequency: "weekly" },
+  saudiToBahrainTransfers: { priority: 0.8, changeFrequency: "weekly" },
+  saudiToQatar: { priority: 0.8, changeFrequency: "weekly" },
+  saudiToKuwait: { priority: 0.8, changeFrequency: "weekly" },
+  saudiToOman: { priority: 0.8, changeFrequency: "weekly" },
+  saudiToJordan: { priority: 0.8, changeFrequency: "weekly" },
   // An airport service page, ranked with the other two rather than with the
   // destination hubs it sits under.
   madinahAirport: { priority: 0.8, changeFrequency: "monthly" },

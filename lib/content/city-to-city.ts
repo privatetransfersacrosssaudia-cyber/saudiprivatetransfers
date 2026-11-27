@@ -441,8 +441,8 @@ export const cityToCity = {
       routeKey: "saudiToBahrain",
       label: { en: "Saudi to Bahrain by road", ar: "من السعودية إلى البحرين برًّا" },
       note: {
-        en: "An intercity journey that ends at a border: the King Fahd Causeway, on the Saudi side only.",
-        ar: "رحلة بين المدن تنتهي عند حدود: جسر الملك فهد، في الجانب السعودي فقط.",
+        en: "An intercity journey that reaches a border: the King Fahd Causeway, and on into Bahrain where that is what you need.",
+        ar: "رحلة بين المدن تبلغ حدودًا: جسر الملك فهد، وتمضي إلى البحرين إن كان ذلك مرادك.",
       },
     },
   ] as RelatedLink[],

@@ -38,7 +38,7 @@ import type { SiteImageKey } from "@/lib/site-images";
  * and another describing three, so no chart appears and the arrangement is
  * confirmed per flight — the same position the Jeddah and Madinah airport
  * pages take. **The causeway**: this is the airport people fly into to cross
- * to Bahrain, and our service stops at the Saudi side. That boundary is stated
+ * to Bahrain, and journeys now continue across it. That scope is stated
  * on the page rather than left for a customer to discover, and it matches the
  * Dammam hub and the Bahrain guide word for word in substance.
  */
@@ -270,8 +270,8 @@ export const dammamAirport = {
     },
     body: [
       {
-        en: "A good number of people fly into this airport in order to cross the King Fahd Causeway, which starts just south of Al Khobar. It is worth being plain about where our service ends: we stay in Saudi Arabia. We do not cross the causeway and we do not provide transport in Bahrain.",
-        ar: "يصل عدد لا بأس به من الناس إلى هذا المطار بقصد عبور جسر الملك فهد، الذي يبدأ جنوب الخبر مباشرة. ويجدر التصريح بحدود خدمتنا: نحن نبقى داخل المملكة العربية السعودية. فلا نعبر الجسر ولا نقدّم النقل في البحرين.",
+        en: "A good number of people fly into this airport in order to cross the King Fahd Causeway, which starts just south of Al Khobar. That journey can be arranged from the terminal: to the crossing, or over it to an address in Bahrain. Say which you want in the enquiry, because the two are quoted differently.",
+        ar: "يصل عدد لا بأس به من الناس إلى هذا المطار بقصد عبور جسر الملك فهد، الذي يبدأ جنوب الخبر مباشرة. ويمكن ترتيب تلك الرحلة من الصالة: إلى المعبر، أو عبره إلى عنوان في البحرين. فاذكر أيّهما تريد في الطلب، لأن لكلٍّ تسعيره.",
       },
       {
         en: "What we can quote is the Saudi-side leg — the airport to Al Khobar, or to an address on this side. Border formalities, visas and the crossing itself are yours to arrange, and our border guide sets out what we could and could not verify about them.",
@@ -433,8 +433,8 @@ export const dammamAirport = {
         ar: "هل يمكنكم نقلنا عبر جسر الملك فهد إلى البحرين؟",
       },
       answer: {
-        en: "No. Our service stays in Saudi Arabia: we do not cross the causeway and we do not provide transport in Bahrain. What we can quote is the Saudi-side leg — the airport to Al Khobar or another address on this side. Visas and border formalities are yours to arrange, and our Saudi Arabia to Bahrain guide sets out what we were able to verify about them and what we were not.",
-        ar: "لا. فخدمتنا تبقى داخل المملكة العربية السعودية: لا نعبر الجسر ولا نقدّم النقل في البحرين. وما يمكننا تسعيره هو المرحلة داخل السعودية — من المطار إلى الخبر أو إلى عنوان آخر في هذا الجانب. أما التأشيرات وإجراءات الحدود فمن شأنك ترتيبها، ويبيّن دليل السعودية إلى البحرين لدينا ما استطعنا التحقق منه وما لم نستطع.",
+        en: "Yes — the journey can run from the terminal across the causeway to an address in Bahrain, or stop at the crossing if that is what you need. Whether one car makes the whole trip depends on the route and is confirmed in the quotation. Visas and border formalities remain yours to arrange, and our Saudi Arabia to Bahrain guide sets out what we were able to verify about them and what we were not.",
+        ar: "نعم — يمكن أن تمضي الرحلة من الصالة عبر الجسر إلى عنوان في البحرين، أو تتوقف عند المعبر إن كان ذلك مرادك. وبقاء سيارة واحدة طوال الطريق يعتمد على المسار ويُؤكَّد في عرض السعر. وتبقى التأشيرات وإجراءات الحدود من ترتيبك، ويبيّن دليل السعودية إلى البحرين لدينا ما استطعنا التحقق منه وما لم نستطع.",
       },
     },
     {
@@ -509,8 +509,8 @@ export const dammamAirport = {
         ar: "من السعودية إلى البحرين",
       },
       note: {
-        en: "Travel information for the King Fahd Causeway. We do not cross it.",
-        ar: "معلومات سفر عن جسر الملك فهد. ونحن لا نعبره.",
+        en: "Travel information for the King Fahd Causeway, and the journeys across it.",
+        ar: "معلومات سفر عن جسر الملك فهد، والرحلات عبره.",
       },
     },
     {
